@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "ABOUT",
+    "accommodation": "ACCOMMODATION",
+    "pricing": "PRICING",
+    "availability": "AVAILABILITY",
+    "facilities": "FACILITIES AND SERVICES",
+    "dining": "DINING",
+    "experiences": "EXPERIENCES",
+    "occasions": "OCCASIONS",
+    "contact": "CONTACT US",
+    "book": "BOOK",
+    "languageName": "ENGLISH",
+    "languageOther": "BAHASA"
+  },
+  "home": {
+    "heroSubtitle": "saba     bali",
+    "intro": {
+      "p1": "Inspired by traditional Balinese village clusters combined with original modern design and detailed attention to comfort, Casabama is a modern 3-villa complex offering a total of 11 bedrooms and 3 pools. Adorned with Indonesian art and craft, the villas provide a relaxing and tranquil homely environment.",
+      "p2": "Each house is self-contained and interlinked via a garden gateway. A gym room at the front of this property is shared by the three villas, while between the villas and the ocean lies a beautiful 29 are grassy field, perfect for weddings and events.",
+      "p3": "Surrounded by corn fields, banana plantations and coconut groves, Casabama is a short walk from the sandy shores of Saba Bay, South East Bali."
+    },
+    "location": {
+      "label": "Location",
+      "heading1": "SABA BEACH",
+      "heading2": "GIANYAR",
+      "description": "Located near Saba Bay on the East coast of Bali, which has views across to the islands of Lembongan and Penida. It is 15km up the coast from Sanur, and a similar distance to Ubud, which can be reached via delightful routes through Balinese villages and temples.",
+      "cta": "GET DIRECTIONS"
+    },
+    "accommodation": {
+      "label": "Accommodation",
+      "heading1": "PEACEFUL",
+      "heading2": "HIDEAWAYS",
+      "description": "Each two-storey private luxury Villa is composed to offer views of the nearby ocean to the South East and the slopes of the mountain Gunung Agung to the North.",
+      "cta": "VIEW ROOMS"
+    },
+    "dining": {
+      "label": "Dining",
+      "heading1": "FLAVOURS",
+      "heading2": "OF BALI",
+      "description": "Our in-house chef and team can provide delicious meals from our suggestive menu, with sufficient notice.",
+      "cta": "FIND OUT MORE"
+    },
+    "experiences": {
+      "label": "Experiences",
+      "heading1": "DISCOVER",
+      "heading2": "GIANYAR",
+      "heading3": "EXPERIENCES",
+      "description": "From sunrise surf at Keramas to river rafting and hidden canyon walks, Gianyar is Bali's playground for nature and adventure. Slow it down in the rice terraces, artisan villages, temples, and local markets — then finish the day with great food and a massage in Ubud.",
+      "img1Alt": "River rafting",
+      "img2Alt": "Beach and palms",
+      "img3Alt": "Mountain scenery"
+    },
+    "footer": {
+      "contactLabel": "Contact Us",
+      "generalEnquiries": "General Enquiries:",
+      "bookingEnquiries": "Booking Enquiries:",
+      "textOnly": "(text only)"
+    }
+  },
+  "accommodation": {
+    "heading": "ACCOMMODATION",
+    "p1": "Each two-storey private luxury Villa is composed to offer views of the nearby ocean to the South East and the slopes of the mountain Gunung Agung to the North.",
+    "p2": "The fully staffed luxury villas may be rented in any combination of the 2 – 11 bedrooms to suit the number of guests – making it the perfect venue for a retreat, celebration, family reunion or friendly hideaway for a honeymoon couple or a small family excited to experience the real Bali in an unspoilt seaside location.",
+    "p3": "Rooms can be booked for a minimum of 3 nights, with 3 rooms being the minimum booking. Check-in between 2pm and 10pm (note while security is present 24 hours, we do not offer a 24 hour reception).",
+    "villasLabel": "VILLAS",
+    "bedrooms": "Bedrooms",
+    "sqMLabel": "sq M of Indoor & Outdoor Space",
+    "moreDetail": "MORE DETAIL"
+  },
+  "about": {
+    "label": "About",
+    "p1": "Inspired by traditional Balinese village clusters combined with original modern design and detailed attention to comfort, Casabama is a modern 3-villa complex offering a total of 11 bedrooms and 3 pools. Adorned with Indonesian art and craft, the villas provide a relaxing and tranquil homely environment.",
+    "p2": "Each house is self-contained and interlinked via a garden gateway. A gym room at the front of this property is shared by the three villas, while between the villas and the ocean lies a beautiful 29 are grassy field, perfect for weddings and events.",
+    "p3": "Surrounded by corn fields, banana plantations and coconut groves, Casabama is a short walk from the sandy shores of Saba Bay, South East Bali.",
+    "team": {
+      "label": "Team",
+      "heading1": "PASSIONATE",
+      "heading2": "HOSPITALITY",
+      "description": "Villa caSabama is supported by a team of friendly staff who take pride in their duties with enthusiasm and smiles. They are never intrusive, yet they are always there to ensure that you have a wonderful stay. Their genuine warmth and authentic hospitality make every guest feel genuinely welcomed."
+    },
+    "gettingHere": {
+      "label": "Location",
+      "heading": "GETTING HERE",
+      "description": "Located near Saba Bay on the East coast of Bali, which has views across to the islands of Lembongan and Penida. It is 15km up the coast from Sanur, and a similar distance to Ubud, which can be reached via delightful routes through Balinese villages and temples.",
+      "addressLabel": "Address",
+      "addressLine1": "Jalan Pantai Saba 680",
+      "addressLine2": "Banjar Saba, Gianyar 80581",
+      "addressLine3": "Bali, Indonesia",
+      "contactLabel": "Contact"
+    }
+  }
+}

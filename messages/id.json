@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "TENTANG KAMI",
+    "accommodation": "AKOMODASI",
+    "pricing": "HARGA",
+    "availability": "KETERSEDIAAN",
+    "facilities": "FASILITAS DAN LAYANAN",
+    "dining": "KULINER",
+    "experiences": "PENGALAMAN",
+    "occasions": "ACARA",
+    "contact": "HUBUNGI KAMI",
+    "book": "PESAN",
+    "languageName": "BAHASA",
+    "languageOther": "ENGLISH"
+  },
+  "home": {
+    "heroSubtitle": "saba     bali",
+    "intro": {
+      "p1": "Terinspirasi dari kluster desa tradisional Bali yang dipadukan dengan desain modern orisinal dan perhatian penuh terhadap kenyamanan, Casabama adalah kompleks 3 vila modern yang menawarkan total 11 kamar tidur dan 3 kolam renang. Dihiasi dengan seni dan kerajinan Indonesia, vila-vila ini memberikan suasana yang santai dan tenang bak di rumah sendiri.",
+      "p2": "Setiap rumah berdiri mandiri dan terhubung satu sama lain melalui gerbang taman. Sebuah ruang gym di bagian depan properti ini digunakan bersama oleh ketiga vila, sementara di antara vila dan samudra terdapat hamparan padang rumput seluas 29 are yang indah, sangat ideal untuk pernikahan dan acara-acara khusus.",
+      "p3": "Dikelilingi oleh ladang jagung, perkebunan pisang, dan kebun kelapa, Casabama hanya selangkah dari pantai berpasir Teluk Saba, Bali Tenggara."
+    },
+    "location": {
+      "label": "Lokasi",
+      "heading1": "PANTAI SABA",
+      "heading2": "GIANYAR",
+      "description": "Berlokasi di dekat Teluk Saba di pesisir timur Bali, dengan pemandangan ke arah pulau-pulau Lembongan dan Penida. Jaraknya 15km dari Sanur ke arah utara sepanjang pantai, dan jarak serupa menuju Ubud yang dapat dicapai melalui rute-rute indah melewati desa dan pura Bali.",
+      "cta": "PETUNJUK ARAH"
+    },
+    "accommodation": {
+      "label": "Akomodasi",
+      "heading1": "SURGA",
+      "heading2": "KEDAMAIAN",
+      "description": "Setiap Vila mewah pribadi dua lantai dirancang untuk menawarkan pemandangan ke laut di Tenggara dan lereng Gunung Agung di Utara.",
+      "cta": "LIHAT KAMAR"
+    },
+    "dining": {
+      "label": "Kuliner",
+      "heading1": "CITA RASA",
+      "heading2": "BALI",
+      "description": "Chef dan tim internal kami siap menyajikan hidangan lezat dari menu pilihan kami, dengan pemberitahuan yang cukup sebelumnya.",
+      "cta": "SELENGKAPNYA"
+    },
+    "experiences": {
+      "label": "Pengalaman",
+      "heading1": "JELAJAHI",
+      "heading2": "GIANYAR",
+      "heading3": "PENGALAMAN",
+      "description": "Dari berselancar saat matahari terbit di Keramas hingga arung jeram dan menjelajahi ngarai tersembunyi, Gianyar adalah taman bermain alam dan petualangan Bali. Nikmati ketenangan di sawah-sawah bertingkat, desa pengrajin, pura, dan pasar lokal — lalu akhiri hari dengan makanan lezat dan pijat di Ubud.",
+      "img1Alt": "Arung jeram",
+      "img2Alt": "Pantai dan pohon palem",
+      "img3Alt": "Pemandangan pegunungan"
+    },
+    "footer": {
+      "contactLabel": "Hubungi Kami",
+      "generalEnquiries": "Pertanyaan Umum:",
+      "bookingEnquiries": "Pertanyaan Pemesanan:",
+      "textOnly": "(pesan saja)"
+    }
+  },
+  "accommodation": {
+    "heading": "AKOMODASI",
+    "p1": "Setiap Villa mewah pribadi dua lantai dirancang untuk menawarkan pemandangan ke laut di Tenggara dan lereng Gunung Agung di Utara.",
+    "p2": "Vila mewah lengkap dengan staf ini dapat disewa dalam kombinasi 2–11 kamar tidur sesuai jumlah tamu – menjadikannya tempat yang sempurna untuk retreat, perayaan, reuni keluarga, atau persembunyian ramah untuk pasangan bulan madu atau keluarga kecil yang ingin merasakan Bali sesungguhnya di lokasi tepi pantai yang alami.",
+    "p3": "Kamar dapat dipesan minimal 3 malam, dengan 3 kamar sebagai pemesanan minimum. Check-in antara pukul 14.00 hingga 22.00 (perhatikan bahwa meskipun keamanan hadir 24 jam, kami tidak menawarkan resepsi 24 jam).",
+    "villasLabel": "VILLA-VILLA",
+    "bedrooms": "Kamar Tidur",
+    "sqMLabel": "sq M Ruang Indoor & Outdoor",
+    "moreDetail": "SELENGKAPNYA"
+  },
+  "about": {
+    "label": "Tentang",
+    "p1": "Terinspirasi dari kluster desa tradisional Bali yang dipadukan dengan desain modern orisinal dan perhatian penuh terhadap kenyamanan, Casabama adalah kompleks 3 vila modern yang menawarkan total 11 kamar tidur dan 3 kolam renang. Dihiasi dengan seni dan kerajinan Indonesia, vila-vila ini memberikan suasana yang santai dan tenang bak di rumah sendiri.",
+    "p2": "Setiap rumah berdiri mandiri dan terhubung satu sama lain melalui gerbang taman. Sebuah ruang gym di bagian depan properti ini digunakan bersama oleh ketiga vila, sementara di antara vila dan samudra terdapat hamparan padang rumput seluas 29 are yang indah, sangat ideal untuk pernikahan dan acara-acara khusus.",
+    "p3": "Dikelilingi oleh ladang jagung, perkebunan pisang, dan kebun kelapa, Casabama hanya selangkah dari pantai berpasir Teluk Saba, Bali Tenggara.",
+    "team": {
+      "label": "Tim",
+      "heading1": "KERAMAHAN",
+      "heading2": "YANG TULUS",
+      "description": "Vila caSabama didukung oleh tim staf yang ramah yang menjalankan tugasnya dengan penuh semangat dan senyuman. Mereka tidak pernah mengganggu, namun selalu siap memastikan Anda menikmati masa menginap yang luar biasa. Kehangatan dan keramahan otentik mereka membuat setiap tamu merasa benar-benar disambut."
+    },
+    "gettingHere": {
+      "label": "Lokasi",
+      "heading": "PETUNJUK ARAH",
+      "description": "Berlokasi di dekat Teluk Saba di pesisir timur Bali, dengan pemandangan ke arah pulau-pulau Lembongan dan Penida. Jaraknya 15km dari Sanur ke arah utara sepanjang pantai, dan jarak serupa menuju Ubud yang dapat dicapai melalui rute-rute indah melewati desa dan pura Bali.",
+      "addressLabel": "Alamat",
+      "addressLine1": "Jalan Pantai Saba 680",
+      "addressLine2": "Banjar Saba, Gianyar 80581",
+      "addressLine3": "Bali, Indonesia",
+      "contactLabel": "Kontak"
+    }
+  }
+}
