@@ -90,7 +90,7 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="bg-white text-stone-700">
-
+      <div className="pt-12" />
       {/* Gallery */}
       <Gallery images={villa.galleryImages} />
 

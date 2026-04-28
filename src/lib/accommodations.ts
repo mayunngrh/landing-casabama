@@ -44,13 +44,13 @@ const RAW_VILLAS: RawVillaDetail[] = [
     name: "Villa Panggung",
     image: "/images/accommodation/panggung.jpg",
     galleryImages: [
-      "/images/accommodation/panggung-1.jpg",
-      "/images/accommodation/panggung-2.jpg",
-      "/images/accommodation/panggung-3.jpg",
+      "/images/accommodation/panggung/gallery-1.jpg",
+      "/images/accommodation/panggung/gallery-2.jpg",
+      "/images/accommodation/panggung/gallery-3.jpg",
     ],
     sizeSqM: 399,
     bedroomCount: 3,
-    floorPlanImage: "/images/accommodation/panggung-floorplan.jpg",
+    floorPlanImage: "/images/accommodation/panggung/floorplan.jpg",
     roomsI18n: {
       en: [
         "Master Bedroom with King Size",
@@ -101,13 +101,13 @@ const RAW_VILLAS: RawVillaDetail[] = [
     name: "Villa Sandiwara",
     image: "/images/accommodation/sandiwara.jpg",
     galleryImages: [
-      "/images/accommodation/sandiwara-1.jpg",
-      "/images/accommodation/sandiwara-2.jpg",
-      "/images/accommodation/sandiwara-3.jpg",
+      "/images/accommodation/sandiwara/gallery-1.jpg",
+      "/images/accommodation/sandiwara/gallery-2.jpg",
+      "/images/accommodation/sandiwara/gallery-3.jpg",
     ],
     sizeSqM: 911,
     bedroomCount: 4,
-    floorPlanImage: "/images/accommodation/sandiwara-floorplan.jpg",
+    floorPlanImage: "/images/accommodation/sandiwara/floorplan.jpg",
     roomsI18n: {
       en: ["Master Bedroom with King Size", "2 Bedrooms with King Size", "1 Bedroom with King Size or 2 single beds"],
       id: ["Kamar Utama dengan Kasur King Size", "2 Kamar Tidur dengan Kasur King Size", "1 Kamar Tidur dengan Kasur King Size atau 2 kasur single"],
@@ -150,13 +150,13 @@ const RAW_VILLAS: RawVillaDetail[] = [
     name: "Villa Panjang",
     image: "/images/accommodation/panjang.jpg",
     galleryImages: [
-      "/images/accommodation/panjang-1.jpg",
-      "/images/accommodation/panjang-2.jpg",
-      "/images/accommodation/panjang-3.jpg",
+      "/images/accommodation/panjang/gallery-1.jpg",
+      "/images/accommodation/panjang/gallery-2.jpg",
+      "/images/accommodation/panjang/gallery-3.jpg",
     ],
     sizeSqM: 906,
     bedroomCount: 4,
-    floorPlanImage: "/images/accommodation/panjang-floorplan.jpg",
+    floorPlanImage: "/images/accommodation/panjang/floorplan.jpg",
     roomsI18n: {
       en: ["Master Bedroom with King Size", "2 Bedrooms with King Size", "1 Bedroom with King Size or 2 single beds"],
       id: ["Kamar Utama dengan Kasur King Size", "2 Kamar Tidur dengan Kasur King Size", "1 Kamar Tidur dengan Kasur King Size atau 2 kasur single"],
