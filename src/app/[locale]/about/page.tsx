@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
 import Animate from "@/components/Animate";
+
+const LocationMap = dynamic(() => import("@/components/LocationMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-stone-100" />,
+});
 
 function FillImg({
   src,
@@ -120,15 +126,8 @@ export default function About() {
       <section className="py-16 px-8 md:px-24">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <Animate from="left">
-            <div className="relative aspect-video overflow-hidden bg-stone-200">
-              <iframe
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                allowFullScreen
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.8!2d115.31971527116443!3d-8.610310164380815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd262a8d8d8d8d%3A0x123456!2sCasabama%20Bali!5e0!3m2!1sen!2sid!4v1680000000000"
-              />
+            <div className="relative aspect-video overflow-hidden bg-stone-100">
+              <LocationMap lat={-8.6103} lng={115.3197} zoom={14} />
             </div>
           </Animate>
           <Animate from="right" delay={100}>

@@ -58,6 +58,35 @@
       "textOnly": "(pesan saja)"
     }
   },
+  "occasions": {
+    "heading": "ACARA",
+    "p1": "caSabama memiliki halaman seluas 20are (200m²) yang dapat disewa untuk acara yang terkait dengan menginap.",
+    "p2": "Tim kami berpengalaman dalam merencanakan dan menyelenggarakan acara mulai dari pernikahan dan perayaan ulang tahun hingga pesta dan perayaan peristiwa khusus. Apakah Anda memerlukan tenda, musisi, peralatan DJ, layanan bar, kembang api, tim kami dapat mengaturnya. Hubungi kami untuk membahas kebutuhan Anda."
+  },
+  "experiencesPage": {
+    "heading": "PENGALAMAN",
+    "p1": "Berikut adalah beberapa aktivitas dan ekskursi yang disarankan selama menginap di caSabama.",
+    "p2": "Beberapa di antaranya sangat bergantung pada cuaca. Jika cuaca diragukan, pemesanan sementara dapat dilakukan dan dikonfirmasi pada hari tersebut.",
+    "p3": "Kami merekomendasikan melakukan ekskursi yang memerlukan perjalanan berkendara di pagi hari ketika lalu lintas umumnya lebih lancar. Jika Anda tertarik, beritahu kami agar kami dapat memberikan informasi harga dan membantu mengatur pemandu, tiket, dan transportasi sesuai kebutuhan.",
+    "learnMore": "SELENGKAPNYA",
+    "viewMore": "LIHAT LEBIH BANYAK"
+  },
+  "dining": {
+    "heading": "KULINER",
+    "description": "Chef dan tim internal kami siap menyajikan hidangan lezat dari menu pilihan kami, dengan pemberitahuan yang cukup sebelumnya."
+  },
+  "facilities": {
+    "heading": "FASILITAS & LAYANAN",
+    "p1": "Villa caSabama didukung oleh tim staf yang ramah yang menjalankan tugasnya dengan penuh semangat dan senyuman.",
+    "p2": "Mereka tidak pernah mengganggu, namun selalu siap memastikan Anda menikmati masa menginap yang luar biasa. Semangat, kehangatan, dan pelayanan tulus mereka terasa memesona, sederhana, dan tidak berlebihan.",
+    "amenitiesHeading": "FASILITAS VILA",
+    "servicesHeading": "LAYANAN TAMU"
+  },
+  "villaDetail": {
+    "keyDetails": "DETAIL UTAMA",
+    "viewFloorPlan": "LIHAT DENAH LANTAI",
+    "additionalFeatures": "FITUR TAMBAHAN"
+  },
   "accommodation": {
     "heading": "AKOMODASI",
     "p1": "Setiap Villa mewah pribadi dua lantai dirancang untuk menawarkan pemandangan ke laut di Tenggara dan lereng Gunung Agung di Utara.",
@@ -88,6 +117,28 @@
       "addressLine2": "Banjar Saba, Gianyar 80581",
       "addressLine3": "Bali, Indonesia",
       "contactLabel": "Kontak"
+    }
+  },
+  "contact": {
+    "heading": "HUBUNGI KAMI",
+    "description": "Kami ingin mendengar dari Anda. Hubungi kami untuk pertanyaan apapun tentang menginap di caSabama.",
+    "form": {
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama Anda",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@anda.com",
+      "messageLabel": "Pesan",
+      "messagePlaceholder": "Pesan Anda",
+      "submit": "KIRIM PESAN"
+    },
+    "info": {
+      "heading": "HUBUNGI KAMI",
+      "generalEnquiries": "Pertanyaan Umum",
+      "bookingEnquiries": "Pertanyaan Pemesanan",
+      "address": "Alamat",
+      "addressLine1": "Jalan Pantai Saba 680",
+      "addressLine2": "Banjar Saba, Gianyar 80581",
+      "addressLine3": "Bali, Indonesia"
     }
   }
 }

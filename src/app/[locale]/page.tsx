@@ -81,7 +81,7 @@ export default function Home() {
       <section className="relative -mt-16 h-screen overflow-hidden">
         <div className="absolute inset-0">
           <FillImg
-            src="/images/hero.jpg"
+            src="/images/home/hero.jpg"
             alt="caSabama villa"
             priority
             sizes="100vw"
@@ -120,7 +120,7 @@ export default function Home() {
         <Animate from="left" className="md:w-5/8 w-full">
           <div className="relative aspect-4/3 overflow-hidden">
             <FillImg
-              src="/images/location.jpg"
+              src="/images/home/location.jpg"
               alt="Saba Beach, Gianyar"
               sizes="(max-width:768px) 100vw, 66vw"
               className="transition-transform duration-700 hover:scale-105"
@@ -160,7 +160,7 @@ export default function Home() {
         <Animate delay={250} className="flex justify-end">
           <div className="relative w-full md:w-[70%] aspect-4/3 overflow-hidden">
             <FillImg
-              src="/images/accommodation.jpg"
+              src="/images/home/accommodation.jpg"
               alt="Villa room interior"
               sizes="(max-width:768px) 100vw, 70vw"
               className="transition-transform duration-700 hover:scale-105"
@@ -174,7 +174,7 @@ export default function Home() {
         <Animate from="up">
           <div className="relative aspect-5/3 overflow-hidden">
             <FillImg
-              src="/images/gallery-1.jpg"
+              src="/images/home/gallery-1.jpg"
               alt="Villa sitting room"
               sizes="100vw"
               className="transition-transform duration-700 hover:scale-105"
@@ -199,7 +199,7 @@ export default function Home() {
           <Animate from="right">
             <div className="relative aspect-4/3 overflow-hidden">
               <FillImg
-                src="/images/dining.jpg"
+                src="/images/home/dining.jpg"
                 alt="Balinese cuisine"
                 sizes="(max-width:768px) 100vw, 50vw"
                 className="transition-transform duration-700 hover:scale-105"
@@ -231,9 +231,9 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {(
             [
-              { src: "/images/exp-1.jpg", altKey: "img1Alt" },
-              { src: "/images/exp-2.jpg", altKey: "img2Alt" },
-              { src: "/images/exp-3.jpg", altKey: "img3Alt" },
+              { src: "/images/home/exp-1.jpg", altKey: "img1Alt" },
+              { src: "/images/home/exp-2.jpg", altKey: "img2Alt" },
+              { src: "/images/home/exp-3.jpg", altKey: "img3Alt" },
             ] as const
           ).map(({ src, altKey }, i) => (
             <Animate key={src} delay={i * 80} from="up">

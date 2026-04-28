@@ -58,6 +58,35 @@
       "textOnly": "(text only)"
     }
   },
+  "occasions": {
+    "heading": "OCCASIONS",
+    "p1": "caSabama has a 20are (200m²) lawn which can be rented for events linked to a stay.",
+    "p2": "Our team has experience in planning and delivering events ranging from weddings and anniversaries to parties and celebrations of special occasions. Whether you require marquees, musical performers, DJ equipment, bar service, fireworks, our team can organise it. Get in touch with us to discuss your requirements."
+  },
+  "experiencesPage": {
+    "heading": "EXPERIENCES",
+    "p1": "Here are some suggested activities and excursions for your stay in caSabama.",
+    "p2": "Some of these are highly weather dependent. If the weather is doubtful, a provisional booking can be made for these, which can be confirmed on the day.",
+    "p3": "We recommend doing the excursions requiring a drive in the morning when the traffic is generally better. If you are interested in any, let us know so that we can provide pricing information and help to arrange the guides, tickets and transportation, as required.",
+    "learnMore": "LEARN MORE",
+    "viewMore": "VIEW MORE"
+  },
+  "dining": {
+    "heading": "DININGS",
+    "description": "Our in-house chef and team can provide delicious meals from our suggested menu, with sufficient notice."
+  },
+  "facilities": {
+    "heading": "FACILITIES & SERVICES",
+    "p1": "Villa caSabama is supported by a team of friendly staff who fulfil their duties with enthusiasm and smiles.",
+    "p2": "They are never intrusive, yet they are always there to ensure that you will experience a truly enjoyable stay. Their genuine enthusiasm, warmth, and service from the heart is charming, modest and unassuming.",
+    "amenitiesHeading": "VILLA AMENITIES",
+    "servicesHeading": "GUEST SERVICES"
+  },
+  "villaDetail": {
+    "keyDetails": "KEY DETAILS",
+    "viewFloorPlan": "VIEW FLOOR PLAN",
+    "additionalFeatures": "ADDITIONAL FEATURES"
+  },
   "accommodation": {
     "heading": "ACCOMMODATION",
     "p1": "Each two-storey private luxury Villa is composed to offer views of the nearby ocean to the South East and the slopes of the mountain Gunung Agung to the North.",
@@ -88,6 +117,28 @@
       "addressLine2": "Banjar Saba, Gianyar 80581",
       "addressLine3": "Bali, Indonesia",
       "contactLabel": "Contact"
+    }
+  },
+  "contact": {
+    "heading": "CONTACT US",
+    "description": "We'd love to hear from you. Get in touch with us for any inquiries about your stay at caSabama.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message",
+      "submit": "SEND MESSAGE"
+    },
+    "info": {
+      "heading": "GET IN TOUCH",
+      "generalEnquiries": "General Enquiries",
+      "bookingEnquiries": "Booking Enquiries",
+      "address": "Address",
+      "addressLine1": "Jalan Pantai Saba 680",
+      "addressLine2": "Banjar Saba, Gianyar 80581",
+      "addressLine3": "Bali, Indonesia"
     }
   }
 }

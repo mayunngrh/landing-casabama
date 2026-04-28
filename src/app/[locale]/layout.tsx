@@ -15,6 +15,9 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "caSabama Bali",
   description: "Luxury villa near Saba Bay, Bali",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export function generateStaticParams() {

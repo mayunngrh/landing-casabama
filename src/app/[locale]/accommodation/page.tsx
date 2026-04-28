@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import Animate from "@/components/Animate";
 import type { Villa } from "@/lib/accommodations";
 
@@ -37,6 +37,7 @@ export default function AccommodationPage() {
   const t = useTranslations("accommodation");
   const locale = useLocale();
   const [villas, setVillas] = useState<Villa[]>([]);
+
 
   useEffect(() => {
     import("@/lib/accommodations").then(({ getAccommodations }) => {
@@ -123,8 +124,7 @@ export default function AccommodationPage() {
                     ))}
                   </ul>
                   <Link
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                    href={`/accommodation/${villa.slug}` as any}
+                    href={`/${locale}/accommodation/${villa.slug}`}
                     className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-stone-400 hover:text-stone-800 transition-colors duration-300 group"
                   >
                     <span className="block w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
