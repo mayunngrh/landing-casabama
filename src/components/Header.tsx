@@ -44,11 +44,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-[#f0eeec] flex items-center justify-between px-6 border-b border-[#e0dedd]">
+      <header className="fixed top-0 left-0 right-0 z-50 h-16 bg-[#f0eeec]/75 backdrop-blur-sm flex items-center justify-between border-b border-[#e0dedd]/30">
         {/* Burger */}
         <button
           onClick={() => setMenuOpen(true)}
-          className="text-[#555] hover:text-[#222]"
+          className="text-[#555] hover:text-stone-400 pl-6 cursor-pointer transition-colors"
           aria-label="Open menu"
         >
           <Menu className="w-5 h-5" />
@@ -56,7 +56,7 @@ export default function Header() {
 
         {/* Logo */}
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center">
-          <div className="text-[17px] font-light tracking-wider text-[#444] leading-none">
+          <div className="text-[17px] font-medium tracking-wider text-[#444] leading-none" style={{ fontFamily: "ITC Avant Garde Gothic" }}>
             caSabama
           </div>
           <div className="text-[10px] tracking-[0.25em] text-[#888] uppercase mt-0.5">
@@ -89,11 +89,10 @@ export default function Header() {
                         }
                         setLangOpen(false);
                       }}
-                      className={`flex items-center gap-2 w-full text-left px-4 py-2 text-[11px] tracking-[0.15em] transition-colors ${
-                        selectedLanguage === loc
-                          ? "text-[#222] font-medium"
-                          : "text-[#888] hover:text-[#222]"
-                      }`}
+                      className={`flex items-center gap-2 w-full text-left px-4 py-2 text-[11px] tracking-[0.15em] transition-colors ${selectedLanguage === loc
+                        ? "text-[#222] font-medium"
+                        : "text-[#888] hover:text-[#222]"
+                        }`}
                     >
                       {selectedLanguage === loc ? (
                         <Check className="w-3 h-3 shrink-0" />
@@ -111,7 +110,7 @@ export default function Header() {
           {/* Book button */}
           <Link
             href="/book"
-            className="bg-[#3a3a3a] text-white text-[11px] tracking-[0.2em] px-6 h-16 flex items-center hover:bg-[#222] transition-colors"
+            className="bg-[#3a3a3a] text-white text-[11px] tracking-[0.2em] px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
           >
             {t("book")}
           </Link>
@@ -128,15 +127,14 @@ export default function Header() {
 
       {/* Burger menu panel */}
       <div
-        className={`fixed top-0 left-0 z-50 h-full w-[320px] bg-white transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 z-50 h-full w-[320px] bg-white transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Panel header */}
         <div className="h-16 flex items-center px-6 border-b border-[#e0dedd]">
           <button
             onClick={() => setMenuOpen(false)}
-            className="text-[#555] hover:text-[#222] ml-auto"
+            className="text-[#555] hover:text-stone-400 ml-auto cursor-pointer transition-colors"
             aria-label="Close menu"
           >
             <X className="w-5 h-5" />

@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Geist } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "../globals.css";
 
-const geist = Geist({
-  variable: "--font-geist-sans",
+const josefin = Josefin_Sans({
+  variable: "--font-josefin",
   subsets: ["latin"],
+  weight: ["300", "400"],
 });
 
 export const metadata: Metadata = {
@@ -36,11 +37,11 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${geist.variable} h-full antialiased`}>
+    <html lang={locale} className={`${josefin.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <main className="flex-1 pt-16">{children}</main>
+          <main className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

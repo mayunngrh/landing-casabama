@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("/fonts/ITC Avant Garde Gothic Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("/fonts/ITC Avant Garde Gothic Medium Oblique.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic";
+  src: url("/fonts/ITC Avant Garde Gothic Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("/fonts/helveticanowtext-bold-demo.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Helvetica Now";
+  src: url("/fonts/helveticanowtext-bolditalic-demo.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
 :root {
   --background: #f7f5f3;
   --foreground: #3a3a3a;
@@ -8,10 +40,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: "Helvetica Now", Helvetica, Arial, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: "Helvetica Now", Helvetica, Arial, sans-serif;
 }

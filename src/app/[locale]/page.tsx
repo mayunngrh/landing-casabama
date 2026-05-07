@@ -78,7 +78,7 @@ export default function Home() {
     <div className="bg-white text-stone-700 overflow-x-hidden">
 
       {/* HERO */}
-      <section className="relative -mt-16 h-screen overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <FillImg
             src="/images/home/hero.jpg"
