@@ -23,7 +23,7 @@ export default function OccasionsPage() {
             {t("heading")}
           </h1>
         </Animate>
-        <div className="space-y-4 max-w-3xl">
+        <div className="space-y-4 ">
           <Animate delay={100}>
             <p className="text-[13px] leading-8 text-stone-500">{t("p1")}</p>
           </Animate>

@@ -117,7 +117,7 @@ export default function About() {
             </div>
           </Animate>
           <Animate from="left">
-            <div className="relative aspect-4/3 overflow-hidden">
+            <div className="relative aspect-5/3 overflow-hidden">
               <FillImg
                 src="/images/about/about-team.jpg"
                 alt="Team at caSabama"

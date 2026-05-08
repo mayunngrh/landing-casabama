@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const [accommodationOpen, setAccommodationOpen] = useState(false);
+
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
 
   const t = useTranslations("nav");
@@ -27,15 +27,9 @@ export default function Header() {
   }, [pathname, locale]);
 
   const navItems = [
+    { key: "home", href: "/" as const },
     { key: "about", href: "/about" as const },
-    {
-      key: "accommodation",
-      href: "/accommodation" as const,
-      children: [
-        { key: "pricing", href: "/accommodation/pricing" as const },
-        { key: "availability", href: "/accommodation/availability" as const },
-      ],
-    },
+    { key: "accommodation", href: "/accommodation" as const },
     { key: "facilities", href: "/facilities" as const },
     { key: "dining", href: "/dining" as const },
     { key: "experiences", href: "/experiences" as const },
@@ -145,33 +139,11 @@ export default function Header() {
                 <Link
                   href={item.href}
                   className="text-[12px] tracking-[0.2em] text-[#444] hover:text-black"
-                  onClick={() => !item.children && setMenuOpen(false)}
+                  onClick={() => setMenuOpen(false)}
                 >
                   {t(item.key as Parameters<typeof t>[0])}
                 </Link>
-                {item.children && (
-                  <button
-                    onClick={() => setAccommodationOpen((v) => !v)}
-                    className="text-[#888]"
-                  >
-                    <ChevronDown className={`w-3 h-3 transition-transform ${accommodationOpen ? "rotate-180" : ""}`} />
-                  </button>
-                )}
               </div>
-              {"children" in item && item.children && accommodationOpen && (
-                <div className="pb-1">
-                  {item.children.map((child) => (
-                    <Link
-                      key={child.key}
-                      href={child.href}
-                      className="block px-14 py-2 text-[11px] tracking-[0.2em] text-[#888] hover:text-[#444]"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {t(child.key as Parameters<typeof t>[0])}
-                    </Link>
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </nav>
