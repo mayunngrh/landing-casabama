@@ -174,7 +174,7 @@ export default function Home() {
       {/* GALLERY */}
       <section className="mt-6">
         <Animate from="up">
-          <div className="relative aspect-5/3 overflow-hidden">
+          <div className="relative aspect-5/2 overflow-hidden">
             <FillImg
               src="/images/home/gallery-1.jpg"
               alt="Villa sitting room"
@@ -186,51 +186,57 @@ export default function Home() {
       </section>
 
       {/* DINING */}
-      <section className="py-16 px-8 md:px-24">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <Animate from="left">
+      <section className="py-28 flex items-stretch">
+        <Animate from="left" className="w-[30%] shrink-0 px-8 md:px-24 flex flex-col justify-between">
+          <div>
             <SectionLabel>{t("dining.label")}</SectionLabel>
             <SectionHeading className="mb-6">
               {t("dining.heading1")}<br />{t("dining.heading2")}
             </SectionHeading>
+          </div>
+          <div>
             <p className="text-[13px] leading-8 text-[#737373] text-justify">
               {t("dining.description")}
             </p>
+            <div className="pt-24" />
             <CtaLink href="/dining">{t("dining.cta")}</CtaLink>
-          </Animate>
-          <Animate from="right">
-            <div className="relative aspect-4/3 overflow-hidden">
-              <FillImg
-                src="/images/home/dining.jpg"
-                alt="Balinese cuisine"
-                sizes="(max-width:768px) 100vw, 50vw"
-                className="transition-transform duration-700 hover:scale-105"
-              />
-            </div>
-          </Animate>
-        </div>
+          </div>
+        </Animate>
+        <Animate from="right" className="flex-1 pr-8">
+          <div className="relative w-full h-full min-h-[500px] overflow-hidden">
+            <FillImg
+              src="/images/home/dining.jpg"
+              alt="Balinese cuisine"
+              sizes="55vw"
+              className="transition-transform duration-700 hover:scale-105"
+            />
+          </div>
+        </Animate>
       </section>
 
       {/* EXPERIENCES */}
-      <section className="py-12 px-8 md:px-24 pb-24">
-        <Animate>
-          <SectionLabel>{t("experiences.label")}</SectionLabel>
-        </Animate>
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-14">
-          <Animate from="left" delay={100}>
-            <SectionHeading>
-              {t("experiences.heading1")}<br />
-              {t("experiences.heading2")}<br />
-              {t("experiences.heading3")}
-            </SectionHeading>
+      <section className="">
+        <div className="px-24">
+          <Animate>
+            <SectionLabel>{t("experiences.label")}</SectionLabel>
           </Animate>
-          <Animate from="right" delay={200} className="pt-1">
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">
-              {t("experiences.description")}
-            </p>
-          </Animate>
+          <div className="flex items-start gap-12 mb-14">
+            <Animate from="left" delay={100} className=" shrink-0">
+              <SectionHeading>
+                {t("experiences.heading1")}<br />
+                {t("experiences.heading2")}<br />
+                {t("experiences.heading3")}
+              </SectionHeading>
+            </Animate>
+            <Animate from="right" delay={200} className="flex-1 pt-1 max-w-sm">
+              <p className="text-[13px] leading-8 text-[#737373] text-justify">
+                {t("experiences.description")}
+              </p>
+            </Animate>
+          </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 pb-16">
           {(
             [
               { src: "/images/home/exp-1.jpg", altKey: "img1Alt" },
@@ -239,7 +245,7 @@ export default function Home() {
             ] as const
           ).map(({ src, altKey }, i) => (
             <Animate key={src} delay={i * 80} from="up">
-              <div className="relative aspect-square overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <FillImg
                   src={src}
                   alt={t(`experiences.${altKey}`)}
