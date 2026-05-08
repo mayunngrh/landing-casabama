@@ -42,15 +42,23 @@ function FillImg({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[28px] md:text-[36px] font-light tracking-widest text-stone-800 uppercase mb-8">
+    <p className="text-[12px] tracking-[0.35em] text-[#737373] uppercase mb-5">
       {children}
     </p>
   );
 }
 
+function SectionHeading1({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <h2 className={`text-[18px] md:text-[22px] font-light tracking-widest text-[#737373] leading-tight uppercase ${className}`}>
+      {children}
+    </h2>
+  );
+}
+
 function SectionHeading({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <h2 className={`text-[28px] md:text-[36px] font-light tracking-widest text-stone-800 leading-tight uppercase ${className}`}>
+    <h2 className={`text-[28px] md:text-[36px] font-light tracking-widest text-[#737373] leading-tight uppercase ${className}`}>
       {children}
     </h2>
   );
@@ -60,35 +68,35 @@ export default function About() {
   const t = useTranslations("about");
 
   return (
-    <div className="bg-white text-stone-700">
+    <div className="bg-white text-[#737373]">
       {/* About section */}
       <section className="py-16 px-8 md:px-24">
         <div className="w-full flex justify-center">
-          <div className="space-y-5">
+          <div className="space-y-5 pt-12">
             <Animate>
               <SectionLabel>{t("label")}</SectionLabel>
             </Animate>
             <Animate delay={100}>
-              <p className="text-[13px] leading-8 text-stone-500">{t("p1")}</p>
+              <p className="text-[13px] leading-6 text-[#737373]">{t("p1")}</p>
             </Animate>
             <Animate delay={200}>
-              <p className="text-[13px] leading-8 text-stone-500">{t("p2")}</p>
+              <p className="text-[13px] leading-6 text-[#737373]">{t("p2")}</p>
             </Animate>
             <Animate delay={300}>
-              <p className="text-[13px] leading-8 text-stone-500">{t("p3")}</p>
+              <p className="text-[13px] leading-6 text-[#737373]">{t("p3")}</p>
             </Animate>
           </div>
         </div>
       </section>
 
       {/* Photo section */}
-      <section className="px-8 md:px-24 pb-16">
+      <section className="pb-16">
         <Animate from="up">
-          <div className="relative w-full aspect-5/3 overflow-hidden">
+          <div className="relative w-13/16 aspect-video overflow-hidden">
             <FillImg
               src="/images/about/about-photo.jpg"
               alt="Villa photo"
-              sizes="100vw"
+              sizes="75vw"
               className="transition-transform duration-700 hover:scale-105"
             />
           </div>
@@ -98,6 +106,14 @@ export default function About() {
       {/* Team section */}
       <section className="py-16 px-8 md:px-24">
         <div className="grid md:grid-cols-2 gap-16 items-start">
+          <Animate from="right" delay={100}>
+            <div>
+              <SectionLabel>{t("team.label")}</SectionLabel>
+              <p className="text-[13px] leading-6 text-[#737373] max-w-96">
+                {t("team.description")}
+              </p>
+            </div>
+          </Animate>
           <Animate from="left">
             <div className="relative aspect-4/3 overflow-hidden">
               <FillImg
@@ -108,57 +124,33 @@ export default function About() {
               />
             </div>
           </Animate>
-          <Animate from="right" delay={100}>
-            <div>
-              <SectionLabel>{t("team.label")}</SectionLabel>
-              <SectionHeading className="mb-6">
-                {t("team.heading1")}<br />{t("team.heading2")}
-              </SectionHeading>
-              <p className="text-[13px] leading-8 text-stone-500">
-                {t("team.description")}
-              </p>
-            </div>
-          </Animate>
         </div>
       </section>
 
       {/* Getting Here section */}
       <section className="py-16 px-8 md:px-24">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <Animate from="left">
-            <div className="relative aspect-video overflow-hidden bg-stone-100">
+        <div className="grid md:grid-cols-3 gap-16 items-start">
+          <Animate from="left" className="md:col-span-2">
+            <div className="relative aspect-6/3 overflow-hidden bg-stone-100">
               <LocationMap lat={-8.6103} lng={115.3197} zoom={14} />
             </div>
           </Animate>
           <Animate from="right" delay={100}>
             <div>
               <SectionLabel>{t("gettingHere.label")}</SectionLabel>
-              <SectionHeading className="mb-6">
-                {t("gettingHere.heading")}
-              </SectionHeading>
-              <p className="text-[13px] leading-8 text-stone-500 mb-6">
-                {t("gettingHere.description")}
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-[10px] tracking-[0.2em] text-stone-400 uppercase mb-2">
-                    {t("gettingHere.addressLabel")}
-                  </p>
-                  <p className="text-[13px] leading-6 text-stone-600">
-                    {t("gettingHere.addressLine1")}<br />
-                    {t("gettingHere.addressLine2")}<br />
-                    {t("gettingHere.addressLine3")}
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[10px] tracking-[0.2em] text-stone-400 uppercase mb-2">
-                    {t("gettingHere.contactLabel")}
-                  </p>
-                  <p className="text-[13px] leading-6 text-stone-600">
-                    <a href="mailto:info@casabama.id" className="hover:text-stone-800">info@casabama.id</a><br />
-                    <a href="tel:+62811366884" className="hover:text-stone-800">+62 811 366 8864</a> (WA)
-                  </p>
-                </div>
+              <div className="mb-12">
+                <SectionHeading>{t("gettingHere.heading")}</SectionHeading>
+              </div>
+              <div className="space-y-6">
+                <p className="text-[13px] leading-7 text-[#737373]">
+                  {t("gettingHere.description1")}
+                </p>
+                <p className="text-[13px] leading-7 text-[#737373]">
+                  {t("gettingHere.description2")}
+                </p>
+                <p className="text-[13px] leading-7 text-[#737373]">
+                  {t("gettingHere.description3")}
+                </p>
               </div>
             </div>
           </Animate>
