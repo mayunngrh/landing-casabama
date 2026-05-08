@@ -14,7 +14,7 @@ function ExperienceCard({ exp }: { exp: Experience }) {
   const t = useTranslations("experiencesPage");
 
   return (
-    <div className="flex flex-col bg-white h-full">
+    <Link href={`/experiences/${exp.id}` as `/experiences/${string}`} className="flex flex-col bg-white h-full hover:shadow-md transition-shadow duration-200 group">
       <div className="relative h-48 overflow-hidden shrink-0">
         {err ? (
           <div className="w-full h-full bg-stone-200" />
@@ -37,15 +37,12 @@ function ExperienceCard({ exp }: { exp: Experience }) {
         <p className="text-[11px] leading-6 text-stone-500 mb-4 line-clamp-5 overflow-hidden">
           {exp.description}
         </p>
-        <Link
-          href={`/experiences/${exp.id}` as `/experiences/${string}`}
-          className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 hover:text-stone-700 transition-colors group mt-auto"
-        >
+        <span className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 group-hover:text-stone-700 transition-colors mt-auto">
           <span className="text-stone-300 tracking-widest group-hover:text-stone-500 transition-colors">------</span>
           {t("learnMore")}
-        </Link>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }
 
