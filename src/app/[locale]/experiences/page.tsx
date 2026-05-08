@@ -13,8 +13,8 @@ function ExperienceCard({ exp }: { exp: Experience }) {
   const t = useTranslations("experiencesPage");
 
   return (
-    <div className="flex flex-col">
-      <div className="relative aspect-4/3 overflow-hidden mb-5">
+    <div className="flex flex-col bg-white h-full">
+      <div className="relative h-48 overflow-hidden shrink-0">
         {err ? (
           <div className="w-full h-full bg-stone-200" />
         ) : (
@@ -29,16 +29,18 @@ function ExperienceCard({ exp }: { exp: Experience }) {
           />
         )}
       </div>
-      <h2 className="text-[16px] font-light tracking-widest text-stone-800 uppercase leading-tight mb-4">
-        {exp.name}
-      </h2>
-      <p className="text-[12px] leading-7 text-stone-500 flex-1 mb-5">
-        {exp.description}
-      </p>
-      <span className="inline-flex items-center gap-2 text-[10px] tracking-[0.2em] text-stone-400 hover:text-stone-700 transition-colors cursor-pointer group">
-        <span className="text-stone-300 tracking-widest group-hover:text-stone-500 transition-colors">------</span>
-        {t("learnMore")}
-      </span>
+      <div className="flex flex-col flex-1 p-4">
+        <h2 className="text-[11px] font-light tracking-widest text-stone-800 uppercase leading-tight mb-3">
+          {exp.name}
+        </h2>
+        <p className="text-[11px] leading-6 text-stone-500 mb-4 line-clamp-5 overflow-hidden">
+          {exp.description}
+        </p>
+        <span className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 hover:text-stone-700 transition-colors cursor-pointer group">
+          <span className="text-stone-300 tracking-widest group-hover:text-stone-500 transition-colors">------</span>
+          {t("learnMore")}
+        </span>
+      </div>
     </div>
   );
 }
@@ -59,7 +61,6 @@ export default function ExperiencesPage() {
 
   return (
     <div className="bg-white text-stone-700">
-
       {/* Intro */}
       <section className="py-16 px-8 md:px-24">
         <Animate>
@@ -81,8 +82,8 @@ export default function ExperiencesPage() {
       </section>
 
       {/* Grid */}
-      <section className="px-8 md:px-24 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-14">
+      <section className="bg-stone-100 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto px-8">
           {visible.map((exp, i) => (
             <Animate key={exp.id} from="up" delay={(i % 3) * 80}>
               <ExperienceCard exp={exp} />
