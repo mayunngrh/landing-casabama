@@ -90,7 +90,7 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="bg-white text-stone-700">
-      <div className="pt-12" />
+      <div className="pt-24" />
       {/* Gallery */}
       <Gallery images={villa.galleryImages} />
 
@@ -101,7 +101,7 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
             {line1}<br />{line2}
           </h1>
         </Animate>
-        <div className="space-y-5 max-w-xl">
+        <div className="space-y-2 max-w-xl">
           {villa.descriptions.map((p, i) => (
             <Animate key={i} delay={i * 80}>
               <p className="text-[13px] leading-8 text-stone-500">{p}</p>
@@ -111,19 +111,19 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
       </section>
 
       {/* Key details */}
-      <section className="px-8 md:px-24 pb-12">
+      <section className="px-8 md:px-48 pb-12">
         <Animate>
-          <div className="border border-stone-200 p-8">
-            <p className="text-[10px] tracking-[0.35em] text-stone-400 uppercase mb-8">
+          <div className="bg-stone-100 px-16 py-12">
+            <p className="text-[10px] tracking-[0.35em] text-[#737373] uppercase mb-10">
               {t("keyDetails")}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-8">
               {villa.keyDetails.map(({ icon, text }) => {
                 const Icon = ICON_MAP[icon];
                 return (
-                  <div key={text} className="flex items-start gap-3">
-                    <Icon className="w-4 h-4 text-stone-400 mt-0.5 shrink-0" strokeWidth={1.5} />
-                    <span className="text-[13px] text-stone-600">{text}</span>
+                  <div key={text} className="flex items-center gap-4">
+                    <Icon className="w-5 h-5 text-[#737373] shrink-0" strokeWidth={1.5} />
+                    <span className="text-[12px] text-[#737373]">{text}</span>
                   </div>
                 );
               })}

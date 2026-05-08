@@ -42,7 +42,7 @@ function FillImg({
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[12px] tracking-[0.35em] text-[#737373] uppercase mb-5">
+    <p className="text-[10px] tracking-[0.35em] text-[#737373] uppercase mb-5">
       {children}
     </p>
   );
@@ -74,7 +74,9 @@ export default function About() {
         <div className="w-full flex justify-center">
           <div className="space-y-5 pt-12">
             <Animate>
-              <SectionLabel>{t("label")}</SectionLabel>
+              <h1 className="text-[28px] md:text-[36px] font-light tracking-widest text-[#737373] uppercase mb-8">
+                {t("label")}
+              </h1>
             </Animate>
             <Animate delay={100}>
               <p className="text-[13px] leading-6 text-[#737373]">{t("p1")}</p>

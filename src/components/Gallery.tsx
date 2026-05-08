@@ -15,7 +15,7 @@ export default function Gallery({ images }: { images: string[] }) {
   const translateX = `calc(15vw - ${active * 72}vw)`;
 
   return (
-    <div className="relative w-full overflow-hidden" style={{ height: "55vw", maxHeight: "520px" }}>
+    <div className="relative w-full overflow-hidden" style={{ height: "42vw", maxHeight: "450px" }}>
       <div
         className="flex transition-transform duration-500 ease-in-out h-full"
         style={{ transform: `translateX(${translateX})`, gap: "2vw" }}
@@ -43,34 +43,27 @@ export default function Gallery({ images }: { images: string[] }) {
         ))}
       </div>
 
-      {active > 0 && (
+      {/* Buttons anchored to bottom corners of the active (center) image */}
+      <div className="absolute bottom-0 flex" style={{ left: "15vw", width: "70vw" }}>
         <button
           onClick={prev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/70 hover:bg-white flex items-center justify-center transition-colors z-10"
+          disabled={active === 0}
+          className="w-20 h-12 bg-white/80 hover:bg-white flex items-center justify-center transition-colors disabled:opacity-0 disabled:pointer-events-none"
           aria-label="Previous"
         >
           <ChevronLeft className="w-5 h-5 text-stone-700" />
         </button>
-      )}
-      {active < images.length - 1 && (
+        <div className="flex-1" />
         <button
           onClick={next}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/70 hover:bg-white flex items-center justify-center transition-colors z-10"
+          disabled={active === images.length - 1}
+          className="w-20 h-12 bg-white/80 hover:bg-white flex items-center justify-center transition-colors disabled:opacity-0 disabled:pointer-events-none"
           aria-label="Next"
         >
           <ChevronRight className="w-5 h-5 text-stone-700" />
         </button>
-      )}
-
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setActive(i)}
-            className={`w-1.5 h-1.5 rounded-full transition-colors ${i === active ? "bg-white" : "bg-white/40"}`}
-          />
-        ))}
       </div>
+
     </div>
   );
 }
