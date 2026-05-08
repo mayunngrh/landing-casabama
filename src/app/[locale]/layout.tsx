@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Josefin_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "../globals.css";
-
-const josefin = Josefin_Sans({
-  variable: "--font-josefin",
-  subsets: ["latin"],
-  weight: ["300", "400"],
-});
 
 export const metadata: Metadata = {
   title: "caSabama Bali",
@@ -37,7 +30,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${josefin.variable} h-full antialiased`}>
+    <html lang={locale} className="h-full antialiased">
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

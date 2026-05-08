@@ -37,7 +37,7 @@ function FillImg({
 
 function SectionLabel({ children }: { children: ReactNode }) {
   return (
-    <p className="text-[10px] tracking-[0.35em] text-stone-400 uppercase mb-5">
+    <p className="text-[10px] tracking-[0.35em] text-[#737373] uppercase mb-5">
       {children}
     </p>
   );
@@ -52,7 +52,7 @@ function SectionHeading({
 }) {
   return (
     <h2
-      className={`text-[28px] md:text-[36px] font-light tracking-widest text-stone-800 leading-tight uppercase ${className}`}
+      className={`text-[28px] md:text-[36px] font-light tracking-widest text-[#737373] leading-tight uppercase ${className}`}
     >
       {children}
     </h2>
@@ -63,7 +63,7 @@ function CtaLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <Link
       href={href}
-      className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-stone-500 hover:text-stone-900 transition-colors duration-300 group mt-6"
+      className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-[#737373] hover:text-[#404040] transition-colors duration-300 group mt-6"
     >
       <span className="block w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
       {children}
@@ -75,7 +75,7 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <div className="bg-white text-stone-700 overflow-x-hidden">
+    <div className="bg-white text-[#737373] overflow-x-hidden">
 
       {/* HERO */}
       <section className="relative h-screen overflow-hidden">
@@ -88,85 +88,87 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/5 to-transparent" />
-        <div className="absolute bottom-[15%] left-15">
-          <Animate from="up" delay={300}>
-            <h1 className="text-[52px] md:text-[72px] font-light tracking-widest text-white leading-none">
-              caSabama
-            </h1>
-            <p className="text-[13px] tracking-[0.45em] text-white/75 mt-3">
-              {t("heroSubtitle")}
-            </p>
-          </Animate>
-        </div>
       </section>
 
       {/* INTRO */}
       <section className="w-full py-16 px-8 md:px-24">
         <div className="space-y-5">
           <Animate>
-            <p className="text-[13px] leading-8 text-stone-500">{t("intro.p1")}</p>
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p1")}</p>
           </Animate>
           <Animate delay={100}>
-            <p className="text-[13px] leading-8 text-stone-500">{t("intro.p2")}</p>
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p2")}</p>
           </Animate>
           <Animate delay={200}>
-            <p className="text-[13px] leading-8 text-stone-500">{t("intro.p3")}</p>
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p3")}</p>
           </Animate>
         </div>
       </section>
 
       {/* LOCATION */}
-      <section className="py-12 flex">
-        <Animate from="left" className="md:w-5/8 w-full">
-          <div className="relative aspect-4/3 overflow-hidden">
+      <section className="py-12 flex items-stretch">
+        <Animate from="left" className="md:w-3/5 w-full shrink-0">
+          <div className="relative aspect-video overflow-hidden">
             <FillImg
               src="/images/home/location.jpg"
               alt="Saba Beach, Gianyar"
-              sizes="(max-width:768px) 100vw, 66vw"
+              sizes="(max-width:768px) 100vw, 60vw"
               className="transition-transform duration-700 hover:scale-105"
             />
           </div>
         </Animate>
-        <Animate from="right" className="py-4 px-8 md:px-24 md:w-1/3 w-full">
-          <SectionLabel>{t("location.label")}</SectionLabel>
-          <SectionHeading className="mb-6">
-            {t("location.heading1")}<br />{t("location.heading2")}
-          </SectionHeading>
-          <p className="text-[13px] leading-8 text-stone-500">
-            {t("location.description")}
-          </p>
-          <CtaLink href="/contact">{t("location.cta")}</CtaLink>
+        <Animate from="right" className="flex-1 min-w-0 px-12 md:px-16 flex flex-col justify-between">
+          <div>
+            <SectionLabel>{t("location.label")}</SectionLabel>
+            <SectionHeading>
+              {t("location.heading1")}<br />{t("location.heading2")}
+            </SectionHeading>
+          </div>
+          <div className="space-y-12">
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">
+              {t("location.description")}
+            </p>
+            <CtaLink href="/contact">{t("location.cta")}</CtaLink>
+          </div>
         </Animate>
       </section>
 
       {/* ACCOMMODATION */}
-      <section className="py-12 px-8 md:px-24">
-        <Animate>
-          <SectionLabel>{t("accommodation.label")}</SectionLabel>
-        </Animate>
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-14">
-          <Animate from="left" delay={100}>
-            <SectionHeading>
-              {t("accommodation.heading1")}<br />{t("accommodation.heading2")}
-            </SectionHeading>
-          </Animate>
-          <Animate from="right" delay={200} className="pt-1">
-            <p className="text-[13px] leading-8 text-stone-500">
-              {t("accommodation.description")}
-            </p>
-            <CtaLink href="/accommodation">{t("accommodation.cta")}</CtaLink>
-          </Animate>
-        </div>
-        <Animate delay={250} className="flex justify-end">
-          <div className="relative w-full md:w-[70%] aspect-4/3 overflow-hidden">
-            <FillImg
-              src="/images/home/accommodation.jpg"
-              alt="Villa room interior"
-              sizes="(max-width:768px) 100vw, 70vw"
-              className="transition-transform duration-700 hover:scale-105"
-            />
+      <section className="py-12">
+        <div className="flex items-start">
+          {/* Left: label + heading, with padding */}
+          <div className="w-[35%] shrink-0 px-8 md:px-24" />
+
+          {/* Right: description + CTA + image — all starting at same left edge */}
+          <div className="w-[65%] flex flex-col px-8 md:pr-24 md:pl-0">
+            <div className="flex gap-28">
+              <Animate from="left" delay={100} className="w-[35%] shrink-0">
+                <SectionLabel>{t("accommodation.label")}</SectionLabel>
+                <SectionHeading>
+                  {t("accommodation.heading1")}<br />{t("accommodation.heading2")}
+                </SectionHeading>
+              </Animate>
+              <Animate from="right" delay={200}>
+                <p className="text-[13px] leading-8 text-[#737373] text-justify">
+                  {t("accommodation.description")}
+                </p>
+                <div className="pt-24" />
+                <CtaLink href="/accommodation">{t("accommodation.cta")}</CtaLink>
+              </Animate>
+            </div>
+
+            <Animate delay={250} className="mt-8">
+              <div className="relative w-full aspect-video overflow-hidden">
+                <FillImg
+                  src="/images/home/accommodation.jpg"
+                  alt="Villa room interior"
+                  sizes="65vw"
+                  className="transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+            </Animate>
           </div>
-        </Animate>
+        </div>
       </section>
 
       {/* GALLERY */}
@@ -191,7 +193,7 @@ export default function Home() {
             <SectionHeading className="mb-6">
               {t("dining.heading1")}<br />{t("dining.heading2")}
             </SectionHeading>
-            <p className="text-[13px] leading-8 text-stone-500">
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">
               {t("dining.description")}
             </p>
             <CtaLink href="/dining">{t("dining.cta")}</CtaLink>
@@ -223,7 +225,7 @@ export default function Home() {
             </SectionHeading>
           </Animate>
           <Animate from="right" delay={200} className="pt-1">
-            <p className="text-[13px] leading-8 text-stone-500">
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">
               {t("experiences.description")}
             </p>
           </Animate>
