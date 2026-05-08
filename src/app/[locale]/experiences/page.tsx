@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 import Animate from "@/components/Animate";
 import type { Experience } from "@/lib/experiences";
 
@@ -36,10 +37,13 @@ function ExperienceCard({ exp }: { exp: Experience }) {
         <p className="text-[11px] leading-6 text-stone-500 mb-4 line-clamp-5 overflow-hidden">
           {exp.description}
         </p>
-        <span className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 hover:text-stone-700 transition-colors cursor-pointer group">
+        <Link
+          href={`/experiences/${exp.id}` as `/experiences/${string}`}
+          className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 hover:text-stone-700 transition-colors group mt-auto"
+        >
           <span className="text-stone-300 tracking-widest group-hover:text-stone-500 transition-colors">------</span>
           {t("learnMore")}
-        </span>
+        </Link>
       </div>
     </div>
   );
