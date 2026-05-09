@@ -51,11 +51,11 @@ export default function Header() {
 
         {/* Logo */}
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center">
-          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized className="h-8 w-auto" />
+          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized className="h-6 md:h-8 w-auto" />
         </Link>
 
         {/* Right: Language + Book */}
-        <div className="flex items-center gap-4 md:gap-16">
+        <div className="flex items-center gap-2 md:gap-16">
           {/* Language selector */}
           <div className="relative">
             <button
@@ -100,7 +100,7 @@ export default function Header() {
           {/* Book button */}
           <Link
             href="/book"
-            className="bg-[#3a3a3a] text-white text-[11px] tracking-[0.2em] px-6 md:px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
+            className="bg-[#3a3a3a] text-white text-[10px] tracking-[0.2em] px-3 md:px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
           >
             {t("book")}
           </Link>
