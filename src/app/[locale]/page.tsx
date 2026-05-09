@@ -78,13 +78,16 @@ export default function Home() {
     <div className="bg-white text-[#737373] overflow-x-hidden">
 
       {/* HERO */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative h-[70vh] md:h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <FillImg
+          <Image
             src="/images/home/hero.jpg"
             alt="caSabama villa"
+            fill
+            unoptimized
             priority
             sizes="100vw"
+            className="object-cover object-[70%_50%] md:object-center"
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/5 to-transparent" />
@@ -106,8 +109,8 @@ export default function Home() {
       </section>
 
       {/* LOCATION */}
-      <section className="py-12 flex items-stretch">
-        <Animate from="left" className="md:w-3/5 w-full shrink-0">
+      <section className="py-12 flex flex-col md:flex-row items-stretch">
+        <Animate from="left" className="w-full md:w-3/5 shrink-0">
           <div className="relative aspect-video overflow-hidden">
             <FillImg
               src="/images/home/location.jpg"
@@ -117,30 +120,62 @@ export default function Home() {
             />
           </div>
         </Animate>
-        <Animate from="right" className="flex-1 min-w-0 px-12 md:px-16 flex flex-col justify-between">
+        <Animate from="right" className="w-full md:flex-1 md:min-w-0 px-8 py-10 md:px-16 md:py-0 flex flex-col justify-between">
           <div>
             <SectionLabel>{t("location.label")}</SectionLabel>
             <SectionHeading>
               {t("location.heading1")}<br />{t("location.heading2")}
             </SectionHeading>
           </div>
-          <div className="space-y-12">
+          <div className="space-y-8 md:space-y-12">
             <p className="text-[13px] leading-8 text-[#737373] text-justify">
               {t("location.description")}
             </p>
-            <CtaLink href="/contact">{t("location.cta")}</CtaLink>
+            <a
+              href="https://www.google.com/maps?q=-8.6103,115.3197"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-[#737373] hover:text-[#404040] transition-colors duration-300 group mt-6"
+            >
+              <span className="block w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
+              {t("location.cta")}
+            </a>
           </div>
         </Animate>
       </section>
 
       {/* ACCOMMODATION */}
       <section className="py-12">
-        <div className="flex items-start">
-          {/* Left: label + heading, with padding */}
-          <div className="w-[35%] shrink-0 px-8 md:px-24" />
+        {/* Mobile layout */}
+        <div className="flex flex-col px-8 gap-8 md:hidden">
+          <Animate from="up">
+            <SectionLabel>{t("accommodation.label")}</SectionLabel>
+            <SectionHeading>
+              {t("accommodation.heading1")}<br />{t("accommodation.heading2")}
+            </SectionHeading>
+          </Animate>
+          <Animate from="up" delay={100}>
+            <p className="text-[13px] leading-8 text-[#737373] text-justify">
+              {t("accommodation.description")}
+            </p>
+            <CtaLink href="/accommodation">{t("accommodation.cta")}</CtaLink>
+          </Animate>
+          <Animate from="up" delay={150}>
+            <div className="relative w-full aspect-video overflow-hidden">
+              <FillImg
+                src="/images/home/accommodation.jpg"
+                alt="Villa room interior"
+                sizes="100vw"
+                className="transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+          </Animate>
+        </div>
 
-          {/* Right: description + CTA + image — all starting at same left edge */}
-          <div className="w-[65%] flex flex-col px-8 md:pr-24 md:pl-0">
+        {/* Desktop layout — unchanged */}
+        <div className="hidden md:flex items-start">
+          <div className="w-[35%] shrink-0 px-24" />
+          <div className="w-[65%] flex flex-col pr-24 pl-0">
             <div className="flex gap-28">
               <Animate from="left" delay={100} className="w-[35%] shrink-0">
                 <SectionLabel>{t("accommodation.label")}</SectionLabel>
@@ -156,7 +191,6 @@ export default function Home() {
                 <CtaLink href="/accommodation">{t("accommodation.cta")}</CtaLink>
               </Animate>
             </div>
-
             <Animate delay={250} className="mt-8">
               <div className="relative w-full aspect-video overflow-hidden">
                 <FillImg
@@ -186,8 +220,35 @@ export default function Home() {
       </section>
 
       {/* DINING */}
-      <section className="py-28 flex items-stretch">
-        <Animate from="left" className="w-[30%] shrink-0 px-8 md:px-24 flex flex-col justify-between">
+      {/* Mobile layout */}
+      <section className="py-12 flex flex-col px-8 gap-8 md:hidden">
+        <Animate from="up">
+          <SectionLabel>{t("dining.label")}</SectionLabel>
+          <SectionHeading className="mb-6">
+            {t("dining.heading1")}<br />{t("dining.heading2")}
+          </SectionHeading>
+        </Animate>
+        <Animate from="up" delay={100}>
+          <div className="relative w-full aspect-video overflow-hidden">
+            <FillImg
+              src="/images/home/dining.jpg"
+              alt="Balinese cuisine"
+              sizes="100vw"
+              className="transition-transform duration-700 hover:scale-105"
+            />
+          </div>
+        </Animate>
+        <Animate from="up" delay={150}>
+          <p className="text-[13px] leading-8 text-[#737373] text-justify">
+            {t("dining.description")}
+          </p>
+          <CtaLink href="/dining">{t("dining.cta")}</CtaLink>
+        </Animate>
+      </section>
+
+      {/* Desktop layout — unchanged */}
+      <section className="py-28 hidden md:flex items-stretch">
+        <Animate from="left" className="w-[30%] shrink-0 px-24 flex flex-col justify-between">
           <div>
             <SectionLabel>{t("dining.label")}</SectionLabel>
             <SectionHeading className="mb-6">
@@ -216,19 +277,19 @@ export default function Home() {
 
       {/* EXPERIENCES */}
       <section className="">
-        <div className="px-24">
+        <div className="px-8 md:px-24">
           <Animate>
             <SectionLabel>{t("experiences.label")}</SectionLabel>
           </Animate>
-          <div className="flex items-start gap-12 mb-14">
-            <Animate from="left" delay={100} className=" shrink-0">
+          <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-10 md:mb-14 gap-4">
+            <Animate from="left" delay={100} className="shrink-0">
               <SectionHeading>
                 {t("experiences.heading1")}<br />
                 {t("experiences.heading2")}<br />
                 {t("experiences.heading3")}
               </SectionHeading>
             </Animate>
-            <Animate from="right" delay={200} className="flex-1 pt-1 max-w-sm">
+            <Animate from="right" delay={200} className="md:flex-1 md:pt-1 md:max-w-sm">
               <p className="text-[13px] leading-8 text-[#737373] text-justify">
                 {t("experiences.description")}
               </p>
@@ -236,7 +297,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-16">
           {(
             [
               { src: "/images/home/exp-1.jpg", altKey: "img1Alt" },
@@ -249,7 +310,7 @@ export default function Home() {
                 <FillImg
                   src={src}
                   alt={t(`experiences.${altKey}`)}
-                  sizes="(max-width:768px) 50vw, 33vw"
+                  sizes="(max-width:640px) 100vw, (max-width:768px) 50vw, 33vw"
                   className="transition-transform duration-700 hover:scale-105"
                 />
               </div>

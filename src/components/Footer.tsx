@@ -51,51 +51,52 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#3a3a3a] text-white py-16 px-8 md:px-24">
-      <div className="flex flex-col md:flex-row gap-12 items-center md:items-start justify-between">
-        <Animate from="up" className="md:absolute md:left-5/8 md:-translate-x-1/2">
-          <div className="relative w-32 h-32 rounded-full overflow-hidden">
+      <div className="flex flex-col md:flex-row gap-10 items-center md:items-start md:justify-between">
+        {/* Logo */}
+        <Animate from="up" className="shrink-0">
+          <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden">
             <LogoImg />
           </div>
         </Animate>
-        <Animate from="up" delay={100} className="md:ml-auto w-full md:w-auto md:mr-12">
-          <div className="space-y-6">
-            <div>
-              <p className="text-[9px] tracking-[0.35em] text-stone-400 mb-3 uppercase">
-                {t("footer.contactLabel")}
-              </p>
-              <p className="text-[13px] leading-6 text-stone-300 mb-3">
-                {t("footer.generalEnquiries")}<br />
-                <a href="mailto:info@casabama.id" className="hover:text-white transition-colors">
-                  info@casabama.id
-                </a>
-              </p>
-              <p className="text-[13px] leading-6 text-stone-300 mb-3">
-                {t("footer.bookingEnquiries")}<br />
-                <a href="mailto:bookings@casabama.id" className="hover:text-white transition-colors">
-                  bookings@casabama.id
-                </a>
-              </p>
-              <p className="text-[13px] leading-6 text-stone-300 mb-3">
-                <a
-                  href="https://maps.google.com/?q=Jalan+Pantai+Saba+680,+Banjar+Saba"
-                  className="hover:text-white transition-colors underline"
-                >
-                  jalan pantai saba 48B<br />
-                  blahbatuh gianyar - bali 80581
-                </a>
-              </p>
-              <p className="text-[13px] leading-6 text-stone-300">
-                WA:{" "}
-                <a href="tel:+62818196684" className="hover:text-white transition-colors">
-                  +65 818 196 684
-                </a>
-                <span className="text-stone-500"> {t("footer.textOnly")}</span>
-              </p>
-            </div>
+
+        {/* Contact info */}
+        <Animate from="up" delay={100} className="w-full md:w-auto text-center md:text-left">
+          <div>
+            <p className="text-[9px] tracking-[0.35em] text-stone-400 mb-3 uppercase">
+              {t("footer.contactLabel")}
+            </p>
+            <p className="text-[13px] leading-6 text-stone-300 mb-3">
+              {t("footer.generalEnquiries")}<br />
+              <a href="mailto:info@casabama.id" className="hover:text-white transition-colors">
+                info@casabama.id
+              </a>
+            </p>
+            <p className="text-[13px] leading-6 text-stone-300 mb-3">
+              {t("footer.bookingEnquiries")}<br />
+              <a href="mailto:bookings@casabama.id" className="hover:text-white transition-colors">
+                bookings@casabama.id
+              </a>
+            </p>
+            <p className="text-[13px] leading-6 text-stone-300 mb-3">
+              <a
+                href="https://maps.google.com/?q=Jalan+Pantai+Saba+680,+Banjar+Saba"
+                className="hover:text-white transition-colors underline"
+              >
+                jalan pantai saba 48B<br />
+                blahbatuh gianyar - bali 80581
+              </a>
+            </p>
+            <p className="text-[13px] leading-6 text-stone-300">
+              WA:{" "}
+              <a href="tel:+62818196684" className="hover:text-white transition-colors">
+                +65 818 196 684
+              </a>
+              <span className="text-stone-500"> {t("footer.textOnly")}</span>
+            </p>
           </div>
         </Animate>
       </div>
-      <Animate from="up" delay={200} className="mt-8 flex justify-end gap-4">
+      <Animate from="up" delay={200} className="mt-8 flex justify-center md:justify-end gap-4">
         {(
           [
             { label: "Facebook", Icon: FacebookIcon, href: "#" },

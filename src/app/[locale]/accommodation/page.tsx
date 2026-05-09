@@ -92,19 +92,22 @@ export default function AccommodationPage() {
         <div className="flex flex-col gap-10">
           {villas.map((villa, i) => (
             <Animate key={villa.id} from="up" delay={i * 80}>
-              <div className="flex items-stretch">
-                {/* Villa image — left ~45% */}
-                <div className="relative w-[45%] shrink-0 aspect-video overflow-hidden">
+              <Link
+                href={`/${locale}/accommodation/${villa.slug}`}
+                className="flex flex-col md:flex-row md:items-stretch group cursor-pointer"
+              >
+                {/* Villa image */}
+                <div className="relative w-full md:w-[45%] md:shrink-0 aspect-video overflow-hidden">
                   <FillImg
                     src={villa.image}
                     alt={villa.name}
                     sizes="(max-width:768px) 100vw, 45vw"
-                    className="transition-transform duration-700 hover:scale-105"
+                    className="transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 
-                {/* Villa details — right, gray background, same height as image */}
-                <div className="flex-1 bg-stone-100 px-10 flex flex-col justify-center">
+                {/* Villa details */}
+                <div className="flex-1 bg-stone-100 px-8 md:px-10 py-8 md:py-0 flex flex-col justify-center">
                   <h2 className="text-[16px] md:text-[19px] font-light tracking-widest text-[#737373] uppercase mb-3">
                     {villa.name}
                   </h2>
@@ -122,15 +125,12 @@ export default function AccommodationPage() {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    href={`/${locale}/accommodation/${villa.slug}`}
-                    className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-[#737373] hover:text-[#404040] transition-colors duration-300 group"
-                  >
+                  <span className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-[#737373] group-hover:text-[#404040] transition-colors duration-300">
                     <span className="block w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
                     {t("moreDetail")}
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             </Animate>
           ))}
         </div>

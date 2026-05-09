@@ -55,7 +55,7 @@ export default function Header() {
         </Link>
 
         {/* Right: Language + Book */}
-        <div className="flex items-center gap-16">
+        <div className="flex items-center gap-4 md:gap-16">
           {/* Language selector */}
           <div className="relative">
             <button
@@ -63,7 +63,7 @@ export default function Header() {
               className="flex items-center gap-2 text-[13px] tracking-[0.12em] text-[#555] cursor-pointer"
             >
               <Globe className="w-4 h-4 shrink-0" />
-              {selectedLanguage === "en" ? "English" : "Bahasa"}
+              <span className="hidden md:inline">{selectedLanguage === "en" ? "English" : "Bahasa"}</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
             </button>
             {langOpen && (
@@ -100,7 +100,7 @@ export default function Header() {
           {/* Book button */}
           <Link
             href="/book"
-            className="bg-[#3a3a3a] text-white text-[11px] tracking-[0.2em] px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
+            className="bg-[#3a3a3a] text-white text-[11px] tracking-[0.2em] px-6 md:px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
           >
             {t("book")}
           </Link>

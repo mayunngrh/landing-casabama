@@ -154,6 +154,15 @@ export default function About() {
                   {t("gettingHere.description3")}
                 </p>
               </div>
+              <a
+                href="https://www.google.com/maps?q=-8.6103,115.3197"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] text-[#737373] hover:text-[#404040] transition-colors duration-300 group mt-6"
+              >
+                <span className="block w-8 h-px bg-current transition-all duration-300 group-hover:w-12" />
+                {t("gettingHere.cta")}
+              </a>
             </div>
           </Animate>
         </div>
