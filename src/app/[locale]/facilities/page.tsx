@@ -37,16 +37,16 @@ export default function FacilitiesPage() {
               <h2 className="text-center text-[20px] md:text-[24px] font-light tracking-widest text-[#737373] uppercase mb-10">
                 {t("amenitiesHeading")}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5 ml-28">
-                <p className="text-[13px] leading-7 text-[#737373]">Private pool with pool towels provided in each villa</p>
-                <p className="text-[13px] leading-7 text-[#737373]">TV Den</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Free Wi-Fi access</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Hairdryer</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Yoga mats available</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Bathroom amenities</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Private Safe in each room</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Ample Parking</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Access to Gym</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5 md:ml-28">
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Private pool with pool towels provided in each villa</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">TV Den</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Free Wi-Fi access</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Hairdryer</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Yoga mats available</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Bathroom amenities</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Private Safe in each room</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Ample Parking</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Access to Gym</p>
               </div>
             </div>
           </div>
@@ -58,19 +58,19 @@ export default function FacilitiesPage() {
       <section className="pb-16">
         <Animate from="up">
           <div className="px-8 md:px-24 mb-12 flex flex-col items-center">
-            <div className="w-full max-w-3xl ml-12">
+            <div className="w-full max-w-3xl md:ml-12">
               <h2 className="text-center text-[20px] md:text-[24px] font-light tracking-widest text-[#737373] uppercase mb-10">
                 {t("servicesHeading")}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-5">
-                <p className="text-[13px] leading-7 text-[#737373]">Arranging airport transfers</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Housekeeping</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Drivers and guides to local destinations in Bali (see more details of our suggested Experiences)</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Massage bookings, with 24 hour notice, in our in-house massage rooms</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Inclusive breakfast</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Laundry services</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Lunch and dinner on request, with 24 hour notice (provided by our in-house chef)</p>
-                <p className="text-[13px] leading-7 text-[#737373]">Complimentary Tea and coffee and mineral water.</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Arranging airport transfers</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Housekeeping</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Drivers and guides to local destinations in Bali (see more details of our suggested Experiences)</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Massage bookings, with 24 hour notice, in our in-house massage rooms</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Inclusive breakfast</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Laundry services</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Lunch and dinner on request, with 24 hour notice (provided by our in-house chef)</p>
+                <p className="text-[13px] leading-7 text-[#737373] text-center md:text-left">Complimentary Tea and coffee and mineral water.</p>
               </div>
             </div>
           </div>
