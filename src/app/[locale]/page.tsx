@@ -91,6 +91,9 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/5 to-transparent" />
+        <div className="absolute bottom-12 left-12 md:bottom-24 md:left-24 z-10 animate-fade-in">
+          <Image src="/images/logo-text-white.png" alt="caSabama" width={100} height={32} unoptimized className="h-20 md:h-32 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+        </div>
       </section>
 
       {/* INTRO */}
@@ -116,7 +119,7 @@ export default function Home() {
               src="/images/home/location.jpg"
               alt="Saba Beach, Gianyar"
               sizes="(max-width:768px) 100vw, 60vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -166,7 +169,7 @@ export default function Home() {
                 src="/images/home/accommodation.jpg"
                 alt="Villa room interior"
                 sizes="100vw"
-                className="transition-transform duration-700 hover:scale-105"
+                className=""
               />
             </div>
           </Animate>
@@ -197,7 +200,7 @@ export default function Home() {
                   src="/images/home/accommodation.jpg"
                   alt="Villa room interior"
                   sizes="65vw"
-                  className="transition-transform duration-700 hover:scale-105"
+                  className=""
                 />
               </div>
             </Animate>
@@ -213,7 +216,7 @@ export default function Home() {
               src="/images/home/gallery-1.jpg"
               alt="Villa sitting room"
               sizes="100vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -234,7 +237,7 @@ export default function Home() {
               src="/images/home/dining.jpg"
               alt="Balinese cuisine"
               sizes="100vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -269,7 +272,7 @@ export default function Home() {
               src="/images/home/dining.jpg"
               alt="Balinese cuisine"
               sizes="55vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -311,7 +314,7 @@ export default function Home() {
                   src={src}
                   alt={t(`experiences.${altKey}`)}
                   sizes="(max-width:640px) 100vw, (max-width:768px) 50vw, 33vw"
-                  className="transition-transform duration-700 hover:scale-105"
+                  className=""
                 />
               </div>
             </Animate>

@@ -99,7 +99,7 @@ export default function About() {
               src="/images/about/about-photo.jpg"
               alt="Villa photo"
               sizes="75vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -122,7 +122,7 @@ export default function About() {
                 src="/images/about/about-team.jpg"
                 alt="Team at caSabama"
                 sizes="(max-width:768px) 100vw, 50vw"
-                className="transition-transform duration-700 hover:scale-105"
+                className=""
               />
             </div>
           </Animate>

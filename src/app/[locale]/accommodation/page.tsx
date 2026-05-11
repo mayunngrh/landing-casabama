@@ -75,7 +75,7 @@ export default function AccommodationPage() {
               src="/images/accommodation/overview.jpg"
               alt="caSabama villa complex"
               sizes="100vw"
-              className="transition-transform duration-700 hover:scale-105"
+              className=""
             />
           </div>
         </Animate>
@@ -102,7 +102,7 @@ export default function AccommodationPage() {
                     src={villa.image}
                     alt={villa.name}
                     sizes="(max-width:768px) 100vw, 45vw"
-                    className="transition-transform duration-700 group-hover:scale-105"
+                    className=""
                   />
                 </div>
 

@@ -50,8 +50,8 @@ export default function Header() {
         </button>
 
         {/* Logo */}
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center">
-          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized className="h-6 md:h-8 w-auto" />
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center h-full flex items-center">
+          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Right: Language + Book */}
