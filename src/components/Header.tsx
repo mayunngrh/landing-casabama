@@ -98,12 +98,14 @@ export default function Header() {
           </div>
 
           {/* Book button */}
-          <Link
-            href="/book"
+          <a
+            href="https://book-directonline.com/properties/caSabama?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&items[0][rateId]=692598&currency=IDR&checkInDate=2026-05-19&checkOutDate=2026-05-21&trackPage=yes&selected=0"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#3a3a3a] text-white text-[10px] tracking-[0.2em] px-3 md:px-16 h-16 flex items-center hover:bg-[#222] transition-colors"
           >
             {t("book")}
-          </Link>
+          </a>
         </div>
       </header>
 

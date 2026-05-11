@@ -91,8 +91,8 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/5 to-transparent" />
-        <div className="absolute bottom-12 left-12 md:bottom-24 md:left-24 z-10 animate-fade-in">
-          <Image src="/images/logo-text-white.png" alt="caSabama" width={100} height={32} unoptimized className="h-20 md:h-32 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+        <div className="absolute bottom-6 left-6 sm:bottom-12 sm:left-12 md:bottom-24 md:left-24 z-10 animate-fade-in">
+          <Image src="/images/logo-text-white.png" alt="caSabama" width={80} height={32} unoptimized className="h-12 sm:h-20 md:h-24 w-auto opacity-90 hover:opacity-100 transition-opacity" />
         </div>
       </section>
 

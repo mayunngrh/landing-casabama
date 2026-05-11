@@ -11,20 +11,24 @@ export default function Gallery({ images }: { images: string[] }) {
   const prev = () => setActive((i) => Math.max(0, i - 1));
   const next = () => setActive((i) => Math.min(images.length - 1, i + 1));
 
-  // Each image 70vw, 2vw gap → 72vw per step; center at 15vw offset
-  const translateX = `calc(15vw - ${active * 72}vw)`;
+  // Each card: 65vw wide, 16:9 ratio = 36.5625vw tall, 8vw gap → 73vw per step; start at 17.5vw
+  const CARD_W = 65;
+  const CARD_H = CARD_W * (9 / 16);
+  const GAP = 8;
+  const OFFSET = (100 - CARD_W) / 2;
+  const translateX = `calc(${OFFSET}vw - ${active * (CARD_W + GAP)}vw)`;
 
   return (
-    <div className="relative w-full overflow-hidden" style={{ height: "42vw", maxHeight: "450px" }}>
+    <div className="relative w-full overflow-hidden" style={{ height: `${CARD_H}vw`, maxHeight: "520px" }}>
       <div
-        className="flex transition-transform duration-500 ease-in-out h-full"
-        style={{ transform: `translateX(${translateX})`, gap: "2vw" }}
+        className="flex items-center transition-transform duration-500 ease-in-out h-full"
+        style={{ transform: `translateX(${translateX})`, gap: `${GAP}vw` }}
       >
         {images.map((src, i) => (
           <div
             key={src}
-            className={`relative flex-none h-full transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-60"}`}
-            style={{ width: "70vw" }}
+            className={`relative flex-none transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-60"}`}
+            style={{ width: `${CARD_W}vw`, height: `${CARD_H}vw`, maxHeight: "520px" }}
           >
             {errMap[i] ? (
               <div className="w-full h-full bg-stone-200" />
@@ -34,7 +38,7 @@ export default function Gallery({ images }: { images: string[] }) {
                 alt=""
                 fill
                 unoptimized
-                sizes="70vw"
+                sizes="65vw"
                 className="object-cover"
                 onError={() => setErrMap((m) => ({ ...m, [i]: true }))}
               />
@@ -44,7 +48,7 @@ export default function Gallery({ images }: { images: string[] }) {
       </div>
 
       {/* Buttons anchored to bottom corners of the active (center) image */}
-      <div className="absolute bottom-0 flex" style={{ left: "15vw", width: "70vw" }}>
+      <div className="absolute bottom-0 flex" style={{ left: `${OFFSET}vw`, width: `${CARD_W}vw` }}>
         <button
           onClick={prev}
           disabled={active === 0}
