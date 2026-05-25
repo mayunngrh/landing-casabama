@@ -156,7 +156,7 @@ export default function Footer() {
               <p className="text-[12px] leading-5 text-stone-300">
                 <a
                   href="https://maps.google.com/?q=Jalan+Pantai+Saba+680,+Banjar+Saba"
-                  className="hover:text-white transition-colors underline"
+                  className="hover:text-white transition-colors"
                 >
                   jalan pantai saba 48B<br />
                   blahbatuh gianyar - bali 80581
