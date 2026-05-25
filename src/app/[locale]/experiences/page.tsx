@@ -31,13 +31,13 @@ function ExperienceCard({ exp }: { exp: Experience }) {
         )}
       </div>
       <div className="flex flex-col flex-1 p-4">
-        <h2 className="text-[11px] font-light tracking-widest text-stone-800 uppercase leading-tight mb-3">
+        <h2 className="text-[13px] font-light tracking-widest text-stone-800 uppercase leading-tight mb-3">
           {exp.name}
         </h2>
-        <p className="text-[11px] leading-6 text-stone-500 mb-4 line-clamp-5 overflow-hidden">
+        <p className="text-[13px] leading-6 text-stone-500 mb-4 line-clamp-5 overflow-hidden">
           {exp.description}
         </p>
-        <span className="inline-flex items-center gap-2 text-[9px] tracking-[0.2em] text-stone-400 group-hover:text-stone-700 transition-colors mt-auto">
+        <span className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] text-stone-400 group-hover:text-stone-700 transition-colors mt-auto">
           <span className="text-stone-300 tracking-widest group-hover:text-stone-500 transition-colors">------</span>
           {t("learnMore")}
         </span>
@@ -84,7 +84,7 @@ export default function ExperiencesPage() {
 
       {/* Grid */}
       <section className="bg-stone-100 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-3xl mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-8 md:px-16 max-w-7xl mx-auto">
           {visible.map((exp, i) => (
             <Animate key={exp.id} from="up" delay={(i % 3) * 80}>
               <ExperienceCard exp={exp} />

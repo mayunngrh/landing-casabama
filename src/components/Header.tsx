@@ -41,7 +41,6 @@ export default function Header() {
     { key: "dining", href: "/dining" as const },
     { key: "experiences", href: "/experiences" as const },
     { key: "occasions", href: "/occasions" as const },
-    { key: "contact", href: "/contact" as const },
   ];
 
   return (
