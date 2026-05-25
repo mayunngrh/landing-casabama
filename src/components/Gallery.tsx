@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Lightbox from "@/components/Lightbox";
 
 export default function Gallery({ images }: { images: string[] }) {
   const [errMap, setErrMap] = useState<Record<number, boolean>>({});
@@ -52,7 +53,19 @@ export default function Gallery({ images }: { images: string[] }) {
   // Real index (0-based) for opacity highlight
   const realIndex = index === 0 ? images.length - 1 : index === cloned.length - 1 ? 0 : index - 1;
 
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
   return (
+    <>
+    {lightboxIndex !== null && (
+      <Lightbox
+        images={images}
+        index={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onPrev={() => setLightboxIndex((i) => (i! - 1 + images.length) % images.length)}
+        onNext={() => setLightboxIndex((i) => (i! + 1) % images.length)}
+      />
+    )}
     <div className="relative w-full overflow-hidden" style={{ height: `${CARD_H}vw`, maxHeight: "520px" }}>
       <div
         className="flex items-center h-full"
@@ -68,8 +81,9 @@ export default function Gallery({ images }: { images: string[] }) {
           return (
             <div
               key={i}
-              className={`relative flex-none transition-opacity duration-500 ${ri === realIndex ? "opacity-100" : "opacity-60"}`}
+              className={`relative flex-none transition-opacity duration-500 cursor-pointer ${ri === realIndex ? "opacity-100" : "opacity-60"}`}
               style={{ width: `${CARD_W}vw`, height: `${CARD_H}vw`, maxHeight: "520px" }}
+              onClick={() => setLightboxIndex(ri)}
             >
               {errMap[ri] ? (
                 <div className="w-full h-full bg-stone-200" />
@@ -108,5 +122,6 @@ export default function Gallery({ images }: { images: string[] }) {
         </button>
       </div>
     </div>
+    </>
   );
 }
