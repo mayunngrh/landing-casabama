@@ -73,8 +73,8 @@
     "viewMore": "VIEW MORE"
   },
   "dining": {
-    "heading": "DININGS",
-    "description": "Our in-house chef and team can provide delicious meals from our suggested menu, with sufficient notice."
+    "heading": "DINING",
+    "description": "Our Private Dining service is designed for families and small groups, and is ideal for celebrating special occasions such as birthdays, engagements, weddings, or anniversaries. Our culinary team can arrange personalised meals based on your preferences and dietary requirements, from authentic local dishes such as nasi goreng and gado-gado to a wide range of international cuisine."
   },
   "facilities": {
     "heading": "FACILITIES & SERVICES",
@@ -100,9 +100,10 @@
   },
   "about": {
     "label": "About",
-    "p1": "Inspired by traditional Balinese village clusters combined with original modern design and detailed attention to comfort, Casabama is a modern 3-villa complex offering a total of 11 bedrooms and 3 pools. Adorned with Indonesian art and craft, the villas provide a relaxing and tranquil homely environment.",
-    "p2": "Each house is self-contained and interlinked via a garden gateway. A gym room at the front of this property is shared by the three villas, while between the villas and the ocean lies a beautiful 29 are grassy field, perfect for weddings and events.",
-    "p3": "Surrounded by corn fields, banana plantations and coconut groves, Casabama is a short walk from the sandy shores of Saba Bay, South East Bali.",
+    "p1": "caSabama is a collection of three villas, 250m from the black-sand beach of Pantai Saba, in the quiet village of Saba, Gianyar. Designed to take in views of the nearby ocean to the south-east and Gunung Agung to the north, the 2 storey houses offers a peaceful setting for guests looking to experience a quieter, more authentic side of Bali.",
+    "p2": "The villas can be rented individually or together, from 2 to 11 bedrooms. It can accommodate stays of up to 22 guests. Each house has its own pool, tropical garden, open living spaces, dining area and a family den. The gardens are connected through a common gateway. The houses offer fully staffed service, allowing guests to enjoy privacy.",
+    "p3": "Surrounded by Balinese vegetation, rice-field landscapes, coconut palms, water features, caSabama is designed for relaxed indoor-outdoor living. Light-filled interiors combine whitewashed walls, timber ceilings, local fabrics, Indonesian antiques, and comfortable contemporary furniture, creating a warm and understated atmosphere throughout. Bedrooms are spacious and calm, with views toward the sea or garden. Fresh white linens, tiled floors, and adjoining decks are suited for quiet mornings, reading, or yoga. Generous bathrooms, outdoor showers, large dining tables, workspaces, TV/study rooms, Wi-Fi, together with a warm team of staff complete the experience.",
+    "p4": "Whether booked as a private hideaway, family holiday, retreat, or celebration, caSabama offers a refined yet grounded way to experience Bali in an unspoilt seaside location.",
     "team": {
       "label": "Team",
       "heading1": "PASSIONATE",

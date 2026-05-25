@@ -79,13 +79,16 @@ export default function About() {
               </h1>
             </Animate>
             <Animate delay={100}>
-              <p className="text-[16px] leading-6 text-[#737373]">{t("p1")}</p>
+              <p className="text-[16px] leading-6 text-[#737373] text-justify">{t("p1")}</p>
             </Animate>
             <Animate delay={200}>
-              <p className="text-[16px] leading-6 text-[#737373]">{t("p2")}</p>
+              <p className="text-[16px] leading-6 text-[#737373] text-justify">{t("p2")}</p>
             </Animate>
             <Animate delay={300}>
-              <p className="text-[16px] leading-6 text-[#737373]">{t("p3")}</p>
+              <p className="text-[16px] leading-6 text-[#737373] text-justify">{t("p3")}</p>
+            </Animate>
+            <Animate delay={400}>
+              <p className="text-[16px] leading-6 text-[#737373] text-justify">{t("p4")}</p>
             </Animate>
           </div>
         </div>

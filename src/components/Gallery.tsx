@@ -8,8 +8,8 @@ import Lightbox from "@/components/Lightbox";
 export default function Gallery({ images }: { images: string[] }) {
   const [errMap, setErrMap] = useState<Record<number, boolean>>({});
 
-  const CARD_W = 65;
-  const CARD_H = CARD_W * (9 / 16);
+  const CARD_W = 35;
+  const CARD_H = CARD_W * (5 / 3);
   const GAP = 8;
   const OFFSET = (100 - CARD_W) / 2;
 

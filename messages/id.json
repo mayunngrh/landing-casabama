@@ -74,7 +74,7 @@
   },
   "dining": {
     "heading": "KULINER",
-    "description": "Chef dan tim internal kami siap menyajikan hidangan lezat dari menu pilihan kami, dengan pemberitahuan yang cukup sebelumnya."
+    "description": "Layanan Makan Malam Pribadi kami dirancang untuk keluarga dan kelompok kecil, dan sangat ideal untuk merayakan acara-acara khusus seperti ulang tahun, pertunangan, pernikahan, atau hari jadi. Tim kuliner kami dapat menyusun menu yang dipersonalisasi sesuai preferensi dan kebutuhan diet Anda, mulai dari hidangan lokal autentik seperti nasi goreng dan gado-gado hingga berbagai masakan internasional."
   },
   "facilities": {
     "heading": "FASILITAS & LAYANAN",
@@ -100,9 +100,10 @@
   },
   "about": {
     "label": "Tentang",
-    "p1": "Terinspirasi dari kluster desa tradisional Bali yang dipadukan dengan desain modern orisinal dan perhatian penuh terhadap kenyamanan, Casabama adalah kompleks 3 vila modern yang menawarkan total 11 kamar tidur dan 3 kolam renang. Dihiasi dengan seni dan kerajinan Indonesia, vila-vila ini memberikan suasana yang santai dan tenang bak di rumah sendiri.",
-    "p2": "Setiap rumah berdiri mandiri dan terhubung satu sama lain melalui gerbang taman. Sebuah ruang gym di bagian depan properti ini digunakan bersama oleh ketiga vila, sementara di antara vila dan samudra terdapat hamparan padang rumput seluas 29 are yang indah, sangat ideal untuk pernikahan dan acara-acara khusus.",
-    "p3": "Dikelilingi oleh ladang jagung, perkebunan pisang, dan kebun kelapa, Casabama hanya selangkah dari pantai berpasir Teluk Saba, Bali Tenggara.",
+    "p1": "caSabama adalah kumpulan tiga vila, 250m dari pantai berpasir hitam Pantai Saba, di desa Saba yang tenang, Gianyar. Dirancang untuk menikmati pemandangan laut terdekat ke arah tenggara dan Gunung Agung ke arah utara, rumah-rumah 2 lantai ini menawarkan suasana damai bagi tamu yang ingin merasakan sisi Bali yang lebih tenang dan autentik.",
+    "p2": "Vila-vila dapat disewa secara terpisah atau bersama-sama, dari 2 hingga 11 kamar tidur. Dapat menampung hingga 22 tamu. Setiap rumah memiliki kolam renang sendiri, taman tropis, ruang tamu terbuka, area makan, dan ruang keluarga. Taman-taman terhubung melalui gerbang bersama. Rumah-rumah ini dilengkapi layanan staf penuh, memungkinkan tamu menikmati privasi.",
+    "p3": "Dikelilingi oleh vegetasi Bali, lanskap sawah, pohon kelapa, dan fitur air, caSabama dirancang untuk kehidupan indoor-outdoor yang santai. Interior yang terang menggabungkan dinding putih bersih, langit-langit kayu, kain lokal, barang antik Indonesia, dan furnitur kontemporer yang nyaman, menciptakan suasana hangat dan sederhana di seluruh area. Kamar tidur yang luas dan tenang, dengan pemandangan ke laut atau taman. Linen putih bersih, lantai ubin, dan dek yang berdekatan cocok untuk pagi yang tenang, membaca, atau yoga. Kamar mandi yang lapang, shower outdoor, meja makan besar, ruang kerja, ruang TV/belajar, Wi-Fi, bersama tim staf yang hangat melengkapi pengalaman ini.",
+    "p4": "Baik dipesan sebagai tempat peristirahatan pribadi, liburan keluarga, retreat, atau perayaan, caSabama menawarkan cara yang halus namun membumi untuk menikmati Bali di lokasi tepi laut yang belum terjamah.",
     "team": {
       "label": "Tim",
       "heading1": "KERAMAHAN",
