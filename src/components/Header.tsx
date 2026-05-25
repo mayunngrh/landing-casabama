@@ -58,7 +58,7 @@ export default function Header() {
 
         {/* Logo */}
         <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center h-full flex items-center">
-          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized className="h-10 md:h-12 w-auto" />
+          <Image src="/images/logo-text.png" alt="caSabama" width={120} height={40} unoptimized priority className="h-10 md:h-12 w-auto" />
         </Link>
 
         {/* Right: Language + Book */}

@@ -39,6 +39,7 @@ function LogoImg() {
       alt="caSabama logo"
       fill
       unoptimized
+      priority
       sizes="128px"
       className="object-cover"
       onError={() => setErr(true)}
@@ -89,10 +90,9 @@ export default function Footer() {
             </p>
             <p className="text-[12px] leading-5 text-stone-300">
               WA:{" "}
-              <a href="tel:+62818196684" className="hover:text-white transition-colors">
+              <a href="https://wa.me/62818196684" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 +65 818 196 684
               </a>
-              <span className="text-stone-500"> {t("footer.textOnly")}</span>
             </p>
           </div>
         </Animate>
@@ -164,10 +164,9 @@ export default function Footer() {
               </p>
               <p className="text-[12px] leading-5 text-stone-300">
                 WA:{" "}
-                <a href="tel:+62818196684" className="hover:text-white transition-colors">
+                <a href="https://wa.me/62818196684" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   +65 818 196 684
                 </a>
-                <span className="text-stone-500"> {t("footer.textOnly")}</span>
               </p>
             </div>
           </Animate>
