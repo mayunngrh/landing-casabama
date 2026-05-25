@@ -145,25 +145,18 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
       )}
 
       {/* Additional features */}
-      <section className="px-8 md:px-24 pb-24">
+      <section className="px-8 md:px-48 pb-24">
         <Animate>
           <p className="text-[10px] tracking-[0.35em] text-stone-400 uppercase mb-6">
             {t("additionalFeatures")}
           </p>
-          <div className="border border-stone-200">
-            {villa.additionalFeatures.map(([left, right], i) => (
-              <div
-                key={i}
-                className="grid grid-cols-1 md:grid-cols-2 border-b border-stone-200 last:border-b-0"
-              >
-                <div className="px-6 py-4 text-[12px] text-stone-600 leading-6 md:border-r border-stone-200">
-                  {left}
-                </div>
-                <div className="px-6 py-4 text-[12px] text-stone-600 leading-6">
-                  {right}
-                </div>
-              </div>
-            ))}
+          <div className="bg-stone-100 px-16 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-4">
+              {villa.additionalFeatures.flatMap(([left, right], i) => [
+                <p key={`${i}-left`} className="text-[12px] text-stone-600 leading-6">{left}</p>,
+                <p key={`${i}-right`} className="text-[12px] text-stone-600 leading-6">{right}</p>,
+              ])}
+            </div>
           </div>
         </Animate>
       </section>
