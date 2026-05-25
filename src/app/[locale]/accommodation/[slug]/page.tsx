@@ -97,11 +97,11 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
       {/* Name + descriptions */}
       <section className="py-12 px-8 md:px-24">
         <Animate>
-          <h1 className="text-[36px] md:text-[48px] font-light tracking-widest text-stone-800 uppercase leading-tight mb-8">
+          <h1 className="text-[36px] md:text-[48px] font-thin tracking-widest text-stone-800 uppercase leading-tight mb-8">
             {line1}<br />{line2}
           </h1>
         </Animate>
-        <div className="space-y-2 max-w-xl">
+        <div className="space-y-2 max-w-6xl">
           {villa.descriptions.map((p, i) => (
             <Animate key={i} delay={i * 80}>
               <p className="text-[16px] leading-8 text-stone-500">{p}</p>

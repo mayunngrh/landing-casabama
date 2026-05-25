@@ -29,7 +29,14 @@ export default function Header() {
   const navItems = [
     { key: "home", href: "/" as const },
     { key: "about", href: "/about" as const },
-    { key: "accommodation", href: "/accommodation" as const },
+    {
+      key: "accommodation", href: "/accommodation" as const,
+      children: [
+        { label: "Villa Panggung", href: "/accommodation/panggung" as const },
+        { label: "Villa Sandiwara", href: "/accommodation/sandiwara" as const },
+        { label: "Villa Panjang", href: "/accommodation/panjang" as const },
+      ],
+    },
     { key: "facilities", href: "/facilities" as const },
     { key: "dining", href: "/dining" as const },
     { key: "experiences", href: "/experiences" as const },
@@ -146,6 +153,20 @@ export default function Header() {
                   {t(item.key as Parameters<typeof t>[0])}
                 </Link>
               </div>
+              {"children" in item && item.children && (
+                <div className="pb-1">
+                  {item.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      className="block pl-14 pr-8 py-2 text-[11px] tracking-[0.15em] text-[#888] hover:text-black transition-colors"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </nav>
