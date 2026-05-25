@@ -60,7 +60,7 @@ export default function Header() {
           <div className="relative">
             <button
               onClick={() => setLangOpen((v) => !v)}
-              className="flex items-center gap-2 text-[13px] tracking-[0.12em] text-[#555] cursor-pointer"
+              className="flex items-center gap-2 text-[16px] tracking-[0.12em] text-[#555] cursor-pointer"
             >
               <Globe className="w-4 h-4 shrink-0" />
               <span className="hidden md:inline">{selectedLanguage === "en" ? "English" : "Bahasa"}</span>
@@ -79,7 +79,7 @@ export default function Header() {
                         }
                         setLangOpen(false);
                       }}
-                      className={`flex items-center gap-2 w-full text-left px-5 py-2.5 text-[13px] tracking-[0.12em] transition-colors ${selectedLanguage === loc
+                      className={`flex items-center gap-2 w-full text-left px-5 py-2.5 text-[16px] tracking-[0.12em] transition-colors ${selectedLanguage === loc
                         ? "text-[#222] font-medium"
                         : "text-[#888] hover:text-[#222]"
                         }`}

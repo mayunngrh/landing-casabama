@@ -15,7 +15,7 @@ function ExperienceCard({ exp }: { exp: Experience }) {
 
   return (
     <Link href={`/experiences/${exp.id}` as `/experiences/${string}`} className="flex flex-col bg-white h-full hover:shadow-md transition-shadow duration-200 group">
-      <div className="relative h-48 overflow-hidden shrink-0">
+      <div className="relative aspect-5/4 overflow-hidden shrink-0">
         {err ? (
           <div className="w-full h-full bg-stone-200" />
         ) : (
@@ -71,13 +71,13 @@ export default function ExperiencesPage() {
         </Animate>
         <div className="space-y-3 max-w-4xl">
           <Animate delay={100}>
-            <p className="text-[13px] leading-7 text-stone-500">{t("p1")}</p>
+            <p className="text-[16px] leading-7 text-stone-500">{t("p1")}</p>
           </Animate>
           <Animate delay={150}>
-            <p className="text-[13px] leading-7 text-stone-500">{t("p2")}</p>
+            <p className="text-[16px] leading-7 text-stone-500">{t("p2")}</p>
           </Animate>
           <Animate delay={200}>
-            <p className="text-[13px] leading-7 text-stone-500 mt-4">{t("p3")}</p>
+            <p className="text-[16px] leading-7 text-stone-500 mt-4">{t("p3")}</p>
           </Animate>
         </div>
       </section>

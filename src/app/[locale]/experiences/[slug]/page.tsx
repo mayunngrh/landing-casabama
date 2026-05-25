@@ -65,7 +65,7 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
             </h1>
             <div className="space-y-5">
               {exp.detailParagraphs.map((p, i) => (
-                <p key={i} className="text-[13px] leading-8 text-stone-500">
+                <p key={i} className="text-[16px] leading-8 text-stone-500">
                   {p}
                 </p>
               ))}

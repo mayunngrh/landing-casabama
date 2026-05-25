@@ -25,10 +25,10 @@ export default function OccasionsPage() {
         </Animate>
         <div className="space-y-4 ">
           <Animate delay={100}>
-            <p className="text-[13px] leading-8 text-stone-500">{t("p1")}</p>
+            <p className="text-[16px] leading-8 text-stone-500">{t("p1")}</p>
           </Animate>
           <Animate delay={200}>
-            <p className="text-[13px] leading-8 text-stone-500">{t("p2")}</p>
+            <p className="text-[16px] leading-8 text-stone-500">{t("p2")}</p>
           </Animate>
         </div>
       </section>

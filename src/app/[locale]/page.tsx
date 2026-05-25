@@ -100,13 +100,13 @@ export default function Home() {
       <section className="w-full py-16 px-8 md:px-24">
         <div className="space-y-5">
           <Animate>
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p1")}</p>
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">{t("intro.p1")}</p>
           </Animate>
           <Animate delay={100}>
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p2")}</p>
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">{t("intro.p2")}</p>
           </Animate>
           <Animate delay={200}>
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">{t("intro.p3")}</p>
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">{t("intro.p3")}</p>
           </Animate>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function Home() {
             </SectionHeading>
           </div>
           <div className="space-y-8 md:space-y-12">
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">
               {t("location.description")}
             </p>
             <a
@@ -158,7 +158,7 @@ export default function Home() {
             </SectionHeading>
           </Animate>
           <Animate from="up" delay={100}>
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">
               {t("accommodation.description")}
             </p>
             <CtaLink href="/accommodation">{t("accommodation.cta")}</CtaLink>
@@ -187,7 +187,7 @@ export default function Home() {
                 </SectionHeading>
               </Animate>
               <Animate from="right" delay={200}>
-                <p className="text-[13px] leading-8 text-[#737373] text-justify">
+                <p className="text-[16px] leading-8 text-[#737373] text-justify">
                   {t("accommodation.description")}
                 </p>
                 <div className="pt-24" />
@@ -242,7 +242,7 @@ export default function Home() {
           </div>
         </Animate>
         <Animate from="up" delay={150}>
-          <p className="text-[13px] leading-8 text-[#737373] text-justify">
+          <p className="text-[16px] leading-8 text-[#737373] text-justify">
             {t("dining.description")}
           </p>
           <CtaLink href="/dining">{t("dining.cta")}</CtaLink>
@@ -259,7 +259,7 @@ export default function Home() {
             </SectionHeading>
           </div>
           <div>
-            <p className="text-[13px] leading-8 text-[#737373] text-justify">
+            <p className="text-[16px] leading-8 text-[#737373] text-justify">
               {t("dining.description")}
             </p>
             <div className="pt-24" />
@@ -293,7 +293,7 @@ export default function Home() {
               </SectionHeading>
             </Animate>
             <Animate from="right" delay={200} className="md:flex-1 md:pt-1 md:max-w-sm">
-              <p className="text-[13px] leading-8 text-[#737373] text-justify">
+              <p className="text-[16px] leading-8 text-[#737373] text-justify">
                 {t("experiences.description")}
               </p>
             </Animate>

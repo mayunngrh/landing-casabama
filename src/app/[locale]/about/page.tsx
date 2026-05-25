@@ -79,13 +79,13 @@ export default function About() {
               </h1>
             </Animate>
             <Animate delay={100}>
-              <p className="text-[13px] leading-6 text-[#737373]">{t("p1")}</p>
+              <p className="text-[16px] leading-6 text-[#737373]">{t("p1")}</p>
             </Animate>
             <Animate delay={200}>
-              <p className="text-[13px] leading-6 text-[#737373]">{t("p2")}</p>
+              <p className="text-[16px] leading-6 text-[#737373]">{t("p2")}</p>
             </Animate>
             <Animate delay={300}>
-              <p className="text-[13px] leading-6 text-[#737373]">{t("p3")}</p>
+              <p className="text-[16px] leading-6 text-[#737373]">{t("p3")}</p>
             </Animate>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function About() {
           <Animate from="right" delay={100}>
             <div>
               <SectionLabel>{t("team.label")}</SectionLabel>
-              <p className="text-[13px] leading-6 text-[#737373] max-w-96">
+              <p className="text-[16px] leading-6 text-[#737373] max-w-96">
                 {t("team.description")}
               </p>
             </div>
@@ -144,13 +144,13 @@ export default function About() {
                 <SectionHeading>{t("gettingHere.heading")}</SectionHeading>
               </div>
               <div className="space-y-6">
-                <p className="text-[13px] leading-7 text-[#737373]">
+                <p className="text-[16px] leading-7 text-[#737373]">
                   {t("gettingHere.description1")}
                 </p>
-                <p className="text-[13px] leading-7 text-[#737373]">
+                <p className="text-[16px] leading-7 text-[#737373]">
                   {t("gettingHere.description2")}
                 </p>
-                <p className="text-[13px] leading-7 text-[#737373]">
+                <p className="text-[16px] leading-7 text-[#737373]">
                   {t("gettingHere.description3")}
                 </p>
               </div>

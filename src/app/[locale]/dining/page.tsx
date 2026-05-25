@@ -20,7 +20,7 @@ export default function DiningPage() {
           </h1>
         </Animate>
         <Animate delay={100}>
-          <p className="text-[13px] leading-8 text-stone-500 max-w-2xl">{t("description")}</p>
+          <p className="text-[16px] leading-8 text-stone-500 max-w-2xl">{t("description")}</p>
         </Animate>
       </section>
 

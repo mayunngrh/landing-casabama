@@ -104,7 +104,7 @@ export default function VillaDetailPage({ params }: { params: Promise<{ slug: st
         <div className="space-y-2 max-w-xl">
           {villa.descriptions.map((p, i) => (
             <Animate key={i} delay={i * 80}>
-              <p className="text-[13px] leading-8 text-stone-500">{p}</p>
+              <p className="text-[16px] leading-8 text-stone-500">{p}</p>
             </Animate>
           ))}
         </div>

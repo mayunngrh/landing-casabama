@@ -39,7 +39,7 @@ export default function ContactPage() {
           </h1>
         </Animate>
         <Animate delay={100}>
-          <p className="text-[13px] leading-8 text-stone-500 max-w-3xl">
+          <p className="text-[16px] leading-8 text-stone-500 max-w-3xl">
             {t("description")}
           </p>
         </Animate>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="mailto:info@casabama.com"
-                        className="text-[13px] text-stone-700 hover:text-stone-900 transition-colors"
+                        className="text-[16px] text-stone-700 hover:text-stone-900 transition-colors"
                       >
                         {footerT("generalEnquiries").replace("Pertanyaan Umum:", "").trim()}
                       </a>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="mailto:booking@casabama.com"
-                        className="text-[13px] text-stone-700 hover:text-stone-900 transition-colors"
+                        className="text-[16px] text-stone-700 hover:text-stone-900 transition-colors"
                       >
                         {footerT("bookingEnquiries").replace("Pertanyaan Pemesanan:", "").trim()}
                       </a>
@@ -176,7 +176,7 @@ export default function ContactPage() {
                       </p>
                       <a
                         href="tel:+622187911111"
-                        className="text-[13px] text-stone-700 hover:text-stone-900 transition-colors"
+                        className="text-[16px] text-stone-700 hover:text-stone-900 transition-colors"
                       >
                         +62 (0) 21 8791 1111
                       </a>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                       <p className="text-[11px] tracking-widest text-stone-600 uppercase mb-3">
                         {t("info.address")}
                       </p>
-                      <div className="text-[13px] leading-6 text-stone-700">
+                      <div className="text-[16px] leading-6 text-stone-700">
                         <p>{t("info.addressLine1")}</p>
                         <p>{t("info.addressLine2")}</p>
                         <p>{t("info.addressLine3")}</p>
