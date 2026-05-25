@@ -31,8 +31,9 @@ export default function FacilitiesPage() {
 
       {/* Amenities Gallery */}
       <section className="pb-16">
+        <Gallery images={AMENITIES_GALLERY_IMAGES} />
         <Animate from="up">
-          <div className="px-8 md:px-24 mb-12 flex flex-col items-center">
+          <div className="px-8 md:px-24 mt-12 flex flex-col items-center">
             <div className="w-full max-w-3xl ">
               <h2 className="text-center text-[20px] md:text-[24px] font-light tracking-widest text-[#737373] uppercase mb-10">
                 {t("amenitiesHeading")}
@@ -51,13 +52,13 @@ export default function FacilitiesPage() {
             </div>
           </div>
         </Animate>
-        <Gallery images={AMENITIES_GALLERY_IMAGES} />
       </section>
 
       {/* Services section */}
       <section className="pb-16">
+        <Gallery images={SERVICES_GALLERY_IMAGES} />
         <Animate from="up">
-          <div className="px-8 md:px-24 mb-12 flex flex-col items-center">
+          <div className="px-8 md:px-24 mt-12 flex flex-col items-center">
             <div className="w-full max-w-3xl md:ml-12">
               <h2 className="text-center text-[20px] md:text-[24px] font-light tracking-widest text-[#737373] uppercase mb-10">
                 {t("servicesHeading")}
@@ -75,7 +76,6 @@ export default function FacilitiesPage() {
             </div>
           </div>
         </Animate>
-        <Gallery images={SERVICES_GALLERY_IMAGES} />
       </section>
     </div>
   );
