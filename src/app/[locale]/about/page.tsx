@@ -70,8 +70,8 @@ export default function About() {
   return (
     <div className="bg-white text-[#737373]">
       {/* About section */}
-      <section className="py-16 px-8 md:px-24">
-        <div className="w-full flex justify-center">
+      <section className="py-16 pl-8 md:pl-24 pr-8 md:pr-[calc(3/16*100vw)]">
+        <div className="w-full">
           <div className="space-y-5 pt-12">
             <Animate>
               <h1 className="text-[28px] md:text-[36px] font-light tracking-widest text-[#737373] uppercase mb-8">
