@@ -266,7 +266,7 @@ export default function Home() {
             <CtaLink href="/dining">{t("dining.cta")}</CtaLink>
           </div>
         </Animate>
-        <Animate from="right" className="flex-1 pr-8">
+        <Animate from="right" className="flex-1 pr-42">
           <div className="relative w-full h-full min-h-[500px] overflow-hidden">
             <FillImg
               src="/images/home/dining.jpg"
