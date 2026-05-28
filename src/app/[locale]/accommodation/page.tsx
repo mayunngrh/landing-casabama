@@ -56,13 +56,13 @@ export default function AccommodationPage() {
             </h1>
           </Animate>
           <Animate delay={100}>
-            <p className="text-[16px] leading-7 text-[#737373]">{t("p1")}</p>
+            <p className="text-[16px] leading-7 text-[#737373] max-w-3xl text-justify">{t("p1")}</p>
           </Animate>
           <Animate delay={200}>
-            <p className="text-[16px] leading-7 text-[#737373]">{t("p2")}</p>
+            <p className="text-[16px] leading-7 text-[#737373] max-w-3xl text-justify">{t("p2")}</p>
           </Animate>
           <Animate delay={300}>
-            <p className="text-[16px] leading-7 text-[#737373]">{t("p3")}</p>
+            <p className="text-[16px] leading-7 text-[#737373] max-w-3xl text-justify">{t("p3")}</p>
           </Animate>
         </div>
       </section>
