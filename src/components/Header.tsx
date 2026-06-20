@@ -28,7 +28,6 @@ export default function Header() {
 
   const navItems = [
     { key: "home", href: "/" as const },
-    { key: "about", href: "/about" as const },
     {
       key: "accommodation", href: "/accommodation" as const,
       children: [

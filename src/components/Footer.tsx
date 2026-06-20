@@ -90,7 +90,7 @@ export default function Footer() {
             </p>
             <p className="text-[12px] leading-5 text-stone-300">
               WA:{" "}
-              <a href="https://wa.me/62818196684" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://wa.me/6281776848488" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 +65 818 196 684
               </a>
             </p>
@@ -164,7 +164,7 @@ export default function Footer() {
               </p>
               <p className="text-[12px] leading-5 text-stone-300">
                 WA:{" "}
-                <a href="https://wa.me/62818196684" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                <a href="https://wa.me/6281776848488" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                   +65 818 196 684
                 </a>
               </p>

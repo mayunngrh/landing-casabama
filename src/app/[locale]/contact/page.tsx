@@ -175,7 +175,7 @@ export default function ContactPage() {
                         PHONE
                       </p>
                       <a
-                        href="tel:+622187911111"
+                        href="tel:+6281776848488"
                         className="text-[16px] text-stone-700 hover:text-stone-900 transition-colors"
                       >
                         +62 (0) 21 8791 1111
