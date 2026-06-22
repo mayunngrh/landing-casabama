@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Animate from "@/components/Animate";
 import Gallery from "@/components/Gallery";
 
-const GALLERY_IMAGES = Array.from({ length: 6 }, (_, i) => `/images/occasions/occasions-${i + 1}.jpg`);
+const GALLERY_IMAGES = Array.from({ length: 7 }, (_, i) => `/images/occasions/occasions-${i + 1}.jpg`);
 
 export default function OccasionsPage() {
   const t = useTranslations("occasions");
