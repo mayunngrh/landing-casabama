@@ -91,7 +91,7 @@ export default function Footer() {
             <p className="text-[12px] leading-5 text-stone-300">
               WA:{" "}
               <a href="https://wa.me/6281776848488" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                +65 818 196 684
+                +62 817-7684-8488
               </a>
             </p>
           </div>
@@ -165,7 +165,7 @@ export default function Footer() {
               <p className="text-[12px] leading-5 text-stone-300">
                 WA:{" "}
                 <a href="https://wa.me/6281776848488" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  +65 818 196 684
+                  +62 817-7684-8488
                 </a>
               </p>
             </div>

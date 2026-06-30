@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Animate from "@/components/Animate";
 import Gallery from "@/components/Gallery";
 
-const GALLERY_IMAGES = Array.from({ length: 29 }, (_, i) => `/images/dining/dining-${i + 1}.jpg`);
+const GALLERY_IMAGES = Array.from({ length: 32 }, (_, i) => `/images/dining/dining-${i + 1}.jpg`);
 
 export default function DiningPage() {
   const t = useTranslations("dining");
