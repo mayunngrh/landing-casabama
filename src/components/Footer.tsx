@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
 import Animate from "@/components/Animate";
+
+const LocationMap = dynamic(() => import("@/components/LocationMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-stone-600" />,
+});
 
 function FacebookIcon() {
   return (
@@ -52,6 +58,11 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#3a3a3a] text-white">
+      {/* Map — full width on mobile, hidden on desktop (shown inline) */}
+      <div className="md:hidden w-full h-48">
+        <LocationMap lat={-8.6103} lng={115.3197} zoom={14} />
+      </div>
+
       {/* Mobile layout */}
       <div className="flex flex-col items-center gap-8 py-12 px-8 md:hidden text-center">
         {/* Logo */}
@@ -123,7 +134,14 @@ export default function Footer() {
       </div>
 
       {/* Desktop layout */}
-      <div className="hidden md:flex flex-row min-h-80 w-full justify-end">
+      <div className="hidden md:flex flex-row min-h-80 w-full items-center">
+        {/* Map */}
+        <div className="flex-1 flex justify-start pl-16">
+          <div className="w-lg h-56 shrink-0">
+            <LocationMap lat={-8.6103} lng={115.3197} zoom={14} />
+          </div>
+        </div>
+
         {/* Logo */}
         <div className="flex items-center justify-center px-16 py-16">
           <Animate from="up">
@@ -134,7 +152,7 @@ export default function Footer() {
         </div>
 
         {/* Contact + social */}
-        <div className="flex flex-col justify-between py-12 pr-24 pl-8">
+        <div className="flex flex-col justify-between py-12 pr-24">
           {/* Contact info */}
           <Animate from="up" delay={100}>
             <p className="text-[9px] tracking-[0.35em] text-stone-400 mb-4 uppercase">
