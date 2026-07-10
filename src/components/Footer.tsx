@@ -137,9 +137,14 @@ export default function Footer() {
       <div className="hidden md:flex flex-row min-h-80 w-full items-center">
         {/* Map */}
         <div className="flex-1 flex justify-start pl-16">
-          <div className="w-lg h-56 shrink-0">
+          <a
+            href="https://www.google.com/maps?q=-8.6103,115.3197"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-lg h-56 shrink-0 cursor-pointer hover:opacity-90 transition-opacity"
+          >
             <LocationMap lat={-8.6103} lng={115.3197} zoom={14} />
-          </div>
+          </a>
         </div>
 
         {/* Logo */}
